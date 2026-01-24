@@ -8,8 +8,14 @@ from pathlib import Path
 from urllib.parse import urlparse
 from datetime import datetime, date
 import threading
-from http.server import BaseHTTPRequestHandler, HTTPServer
 import queue
+import re
+from bs4 import BeautifulSoup
+import smtplib
+import ssl
+import configparser
+from email.message import EmailMessage
+from decimal import Decimal, InvalidOperation
 
 
 # ---------- CONFIGURAÇÃO DE LOGS ----------
@@ -53,7 +59,255 @@ config_path = Path('db') / 'config.json'
 task_queue = queue.Queue()
 WORKER_DELAY_SECONDS = 2  # delay entre execuções para não "explodir" requisições
 
+email_config = {}
+email_path = Path("db") / "email.ini"
+sites_rules = {}
+# tenta primeiro em db/sites.json, cai para sites.json na raiz
+sites_path_candidates = [Path('db') / 'sites.json', Path('sites.json')]
+sites_path = sites_path_candidates[0]
+
 # ---------- FUNÇÕES UTIL ----------
+
+def carregar_email_config():
+    global email_config
+    try:
+        parser = configparser.ConfigParser()
+        parser.read(email_path, encoding="utf-8")
+
+        if "email" not in parser:
+            raise ValueError("Seção [email] não encontrada")
+
+        sec = parser["email"]
+
+        destinatarios_raw = sec.get("destinatarios", "")
+        destinatarios = [
+            e.strip() for e in destinatarios_raw.split(",") if e.strip()
+        ]
+
+        email_config = {
+            "email": sec.get("email"),
+            "senha": sec.get("senha"),
+            "remetente": sec.get("remetente"),
+            "smtp": sec.get("smtp"),
+            "porta": sec.getint("portaSmtp", 465),
+            "auth": sec.getboolean("autenticacao", True),
+            "destinatarios": destinatarios
+        }
+
+        info_logger.info(
+            f"Configuração de email carregada | destinatarios={destinatarios}"
+        )
+        return True
+
+    except Exception as e:
+        email_config = {}
+        error_logger.error(f"Erro ao carregar email.ini: {e}")
+        return False
+
+    
+def parse_price_text(valor: str) -> Decimal | None:
+    """Converte texto BR vindo do site (ex: 'R$ 6.020,90') em Decimal('6020.90')."""
+    if not valor:
+        return None
+    try:
+        s = str(valor).replace("R$", "").replace("\xa0", " ").strip()
+        s = re.sub(r"[^\d\.,]", "", s)   # mantém só dígitos e separadores
+
+        # remove milhar com ponto
+        s = s.replace(".", "")
+
+        # troca decimal (,) por ponto
+        s = s.replace(",", ".")
+
+        if not s or s == ".":
+            return None
+
+        return Decimal(s)
+    except (InvalidOperation, ValueError):
+        return None
+
+
+def parse_target(value) -> Decimal | None:
+    """Converte targetPrice do JSON (número 15.98) em Decimal('15.98')."""
+    if value is None:
+        return None
+    try:
+        s = str(value).strip()
+        if not s:
+            return None
+        return Decimal(s)
+    except (InvalidOperation, ValueError):
+        return None
+
+
+def fmt_brl_decimal(d: Decimal | None) -> str:
+    """Formata Decimal em BRL 'R$ 15,98'. Se None, retorna '—'."""
+    if d is None:
+        return "—"
+    return "R$ " + f"{d:.2f}".replace(".", ",")
+
+
+
+def enviar_email(
+    assunto: str,
+    corpo: str,
+    destinatarios: list[str] | None = None
+) -> bool:
+    if not email_config:
+        error_logger.error("Config de email não carregada.")
+        return False
+
+    # usa os do ini se não passar manualmente
+    if not destinatarios:
+        destinatarios = email_config.get("destinatarios", [])
+
+    if not destinatarios:
+        error_logger.error("Nenhum destinatário configurado para envio de email.")
+        return False
+
+    try:
+        msg = EmailMessage()
+        msg["From"] = email_config["remetente"]
+        msg["To"] = ", ".join(destinatarios)
+        msg["Subject"] = assunto
+        msg.set_content(corpo)
+
+        context = ssl.create_default_context()
+
+        with smtplib.SMTP_SSL(
+            email_config["smtp"],
+            email_config["porta"],
+            context=context
+        ) as server:
+
+            if email_config["auth"]:
+                server.login(
+                    email_config["email"],
+                    email_config["senha"]
+                )
+
+            server.send_message(msg)
+
+        success_logger.info(
+            f"E-mail enviado | para={destinatarios} | assunto='{assunto}'"
+        )
+        return True
+
+    except Exception as e:
+        error_logger.error(f"Erro ao enviar email: {e}")
+        return False
+
+
+def carregar_sites():
+    """Carrega regras de seletores de preço (primeiro db/sites.json, depois sites.json)."""
+    global sites_rules, sites_path
+    for path in sites_path_candidates:
+        try:
+            with open(path, 'r', encoding='utf-8') as f:
+                sites_rules = json.load(f)
+                sites_path = path
+                info_logger.info(f"Arquivo sites.json carregado com sucesso ({path}).")
+                return True
+        except FileNotFoundError:
+            # tenta próximo caminho
+            continue
+        except json.JSONDecodeError:
+            info_logger.error(f"Erro ao decodificar o arquivo sites.json ({path}).")
+            sites_rules = {}
+            return False
+        except Exception as e:
+            info_logger.error(f"Erro inesperado ao carregar sites.json ({path}): {e}")
+            sites_rules = {}
+            return False
+
+    info_logger.error("Arquivo sites.json não encontrado em db/sites.json nem sites.json.")
+    sites_rules = {}
+    return False
+
+def extrair_dominio(url: str) -> str:
+    host = urlparse(url).netloc.lower()
+    return host.replace("www.", "")
+
+def fetch_selector_text(url: str, selector: str, timeout: int = 15) -> str | None:
+    headers = {
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120 Safari/537.36",
+        "Accept-Language": "pt-BR,pt;q=0.9,en;q=0.8",
+        "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+        "Connection": "keep-alive",
+    }
+
+    with requests.Session() as s:
+        r = s.get(url, headers=headers, timeout=timeout)
+        r.raise_for_status()
+
+    html = r.content.decode("utf-8-sig", errors="replace")
+    soup = BeautifulSoup(html, "html.parser")
+
+    el = soup.select_one(selector)
+    if not el:
+        # salva pra você abrir e ver o que veio de verdade
+        debug_path = Path("logs") / "debug_last_page.html"
+        debug_path.write_text(html, encoding="utf-8", errors="ignore")
+
+        title = soup.title.get_text(strip=True) if soup.title else "(sem title)"
+        error_logger.error(f"Selector não encontrado. final_url={r.url} title={title} salvo_em={debug_path}")
+        return None
+
+    raw = el.get_text(" ", strip=True)
+    return normalizar_preco_br(raw)
+
+
+def normalizar_preco_br(txt: str) -> str:
+    txt = normalizar_texto(txt)
+
+    # remove espaços ao redor de vírgula entre dígitos: "15 , 98" -> "15,98"
+    txt = re.sub(r"(\d)\s*,\s*(\d)", r"\1,\2", txt)
+
+    # remove espaços ao redor de ponto entre dígitos (caso apareça): "1 . 234" -> "1.234"
+    txt = re.sub(r"(\d)\s*\.\s*(\d)", r"\1.\2", txt)
+
+    # se tiver "R$15,98" -> "R$ 15,98"
+    txt = re.sub(r"^R\$\s*", "R$ ", txt)
+
+    return txt
+
+def normalizar_texto(txt: str) -> str:
+    if txt is None:
+        return ""
+
+    # remove BOM e chars invisíveis comuns
+    txt = txt.replace("\ufeff", "").replace("\u200b", "").replace("\u200c", "").replace("\u200d", "")
+
+    # converte NBSP e variações pra espaço normal
+    txt = txt.replace("\xa0", " ").replace("\u2009", " ").replace("\u202f", " ")
+
+    # colapsa qualquer sequência de whitespace em 1 espaço e trim
+    txt = re.sub(r"\s+", " ", txt, flags=re.UNICODE).strip()
+
+    return txt
+
+
+def buscar_preco_por_site(url: str) -> dict:
+
+    dominio = extrair_dominio(url)
+    regra = sites_rules.get(dominio)
+
+    if not regra or "price" not in regra or "selector" not in regra["price"]:
+        return {"ok": False, "dominio": dominio, "selector": None, "value": None,
+                "error": f"Sem regra de selector em sites.json para {dominio}"}
+
+    selector = regra["price"]["selector"]
+
+    try:
+        text = fetch_selector_text(url, selector)
+        if text is None:
+            return {"ok": False, "dominio": dominio, "selector": selector, "value": None,
+                    "error": f"Selector não encontrado: {selector}"}
+
+        return {"ok": True, "dominio": dominio, "selector": selector, "value": text, "error": None}
+
+    except Exception as e:
+        return {"ok": False, "dominio": dominio, "selector": selector, "value": None, "error": str(e)}
 
 
 def _worker_loop():
@@ -81,18 +335,6 @@ def enfileirar_task(task):
         return
     task_queue.put(task)
     info_logger.info(f"Enfileirada: {task.get('description','(sem descrição)')}")
-
-def _parse_date(dstr: str | None) -> date | None:
-    """Aceita 'YYYY/MM/DD' ou 'YYYY-MM-DD'."""
-    if not dstr:
-        return None
-    d = dstr.strip().replace("-", "/")
-    try:
-        y, m, d = map(int, d.split("/"))
-        return date(y, m, d)
-    except Exception:
-        info_logger.warning(f"Data inválida em task: '{dstr}' (esperado YYYY/MM/DD ou YYYY-MM-DD)")
-        return None
 
 def salvar_config(data: dict) -> bool:
     try:
@@ -139,99 +381,98 @@ def verificar_modificacao():
     except Exception as e:
         error_logger.error(f"Erro ao verificar modificações: {str(e)}")
 
-# ---------- HTTP ----------
-
-def fazer_get(url, description):
-    result = {"status": None, "tempo": None, "conteudo": None}
-
-    start_time = time.time()
-    conteudo = None  
-    
-    try:
-        parsed = urlparse(url)
-        short_url = f"{parsed.netloc}{parsed.path}" if parsed.netloc else (url if len(url) <= 30 else url[:30] + '...')
-        resposta = requests.get(url, timeout=10)
-        elapsed = time.time() - start_time
-
-        print(f"✅ {description} | Status: {resposta.status_code} | Tempo: {elapsed:.2f}s")
-        info_logger.info(f"Sucesso na chamada de: {short_url}")
-
-        result["status"] = resposta.status_code
-        result["tempo"] = elapsed
-
-        if resposta.status_code == 200:
-            result["conteudo"] = conteudo
-            conteudo = resposta.content.decode('utf-8-sig', errors='replace').strip()
-            if not conteudo:
-                conteudo = "[resposta vazia ou ilegível]"
-            success_logger.info(f"Response from: {short_url}: {conteudo}")
-            print(f"✅ Sucesso 200 {description} [{time.strftime('%H:%M')}]")
-        else:
-            msg = f"⚠️ Falha: {short_url} → Status {resposta.status_code}"
-            info_logger.warning(msg)
-            error_logger.error(msg)
-            print(f"⚠️ [{time.strftime('%H:%M')}] {short_url} → Status {resposta.status_code}")
-
-        return result
-
-    except requests.exceptions.RequestException as e: 
-        # calcula tempo no timeout
-        elapsed = round(time.time() - start_time, 2)  
-        result["tempo"] = elapsed
-        result["status"] = "ERROR"
-        result["conteudo"] = str(e)
-
-        error_logger.error(f"Erro na requisição para {url}: {str(e)} (tempo: {elapsed}s)")
-        print(f"Erro [{time.strftime('%H:%M')}] {url} → {str(e)}")
-
-        return result
-
-
 # ---------- EXECUÇÃO DAS TAREFAS ----------
-
 def executar_tarefa_se_ativa(task):
     """Executa se a task continuar com status=True (checa em runtime)."""
     try:
-        if not task.get('status', False):
-            info_logger.info(f"Tarefa cancelada: {task.get('description', '(sem descrição)')} (status alterado)")
+        if not task.get("status", False):
+            info_logger.info(f"Tarefa cancelada: {task.get('description','(sem descrição)')} (status alterado)")
             return
-        fazer_get(task['url'], task['description'])
-        # Marca lastRun (opcional)
+
+        url = task["url"]
+        desc = task.get("description", "(sem descrição)")
+
+        start_time = time.time()
+        resp = buscar_preco_por_site(url)
+        elapsed = round(time.time() - start_time, 2)
+
+        parsed = urlparse(url)
+        short_url = f"{parsed.netloc}{parsed.path}"
+
+        if resp.get("ok"):
+            valor = resp["value"]
+            task["lastValue"] = valor
+
+            # LOG SUCESSO SEMPRE (captura OK)
+            success_logger.info(
+                f"{desc} | {short_url} | selector={resp.get('selector')} | value={valor} | tempo de busca={elapsed:.2f}s"
+            )
+
+            # parse correto
+            preco_atual = parse_price_text(valor)               # HTML (BR)
+            target_decimal = parse_target(task.get("targetPrice"))  # JSON (num)
+
+            # corpo sempre seguro (não quebra com None)
+            corpo = (
+                f"Produto: {task.get('description')}\n"
+                f"URL: {task.get('url')}\n\n"
+                f"Preço atual: {fmt_brl_decimal(preco_atual)}\n"
+                f"Preço alvo: {fmt_brl_decimal(target_decimal)}\n\n"
+                f"Data/Hora: {datetime.now().strftime('%d/%m/%Y %H:%M:%S')}\n"
+            )
+
+            # ---------- SEND NOW (manual) ----------
+            # ✅ default False, senão vira spam
+            # so envia email se só envia se explicitamente true  "sendNow": true,
+            if task.get("sendNow", False):
+                enviar_email(
+                    assunto=f"📩 Envio manual: {desc}",
+                    corpo=corpo
+                )
+               #se quiser que o sendnow seja desatibilitado, envia email apenas 1x
+               # task["sendNow"] = False  # auto-resetSendNow ? 
+                success_logger.info(f"SENDNOW | {desc} | email enviado")
+            else:
+                # ---------- ALERTA AUTOMÁTICO (targetPrice) ----------
+                # ---------- se sendNow for false ou nao existir ----------
+                if preco_atual is not None and target_decimal is not None:
+                    if preco_atual <= target_decimal:
+                        # ✅ alertSent=True => pode enviar (alerta armado)
+                        if task.get("alertSent", True):
+                            enviar_email(
+                                assunto=f"🔥 Alerta de preço: {desc}",
+                                corpo=corpo
+                            )
+                            task["alertSent"] = False  # desarma após enviar
+                            success_logger.info(f"ALERTA | {desc} | atual={preco_atual} <= target={target_decimal}")
+                        else:
+                            success_logger.info(f"Alerta já disparado | {desc} | atual={preco_atual} | target={target_decimal}")
+                    else:
+                        # preço acima -> rearma
+                        task["alertSent"] = True
+                        success_logger.info(f"Preço ok | alerta rearmado | {desc} | atual={preco_atual} > target={target_decimal}")
+                else:
+                    success_logger.info(f"Preço capturado sem target/parse | {desc} | valor={valor} | target={task.get('targetPrice')}")
+
+        else:
+            err = resp.get("error", "erro desconhecido")
+            print(f"⚠️ {desc} | FAIL | {elapsed:.2f}s | {err}")
+            info_logger.warning(f"FAIL extract: {short_url} | {elapsed:.2f}s | {err}")
+            error_logger.error(f"{desc} | {short_url} | selector={resp.get('selector')} | error={err}")
+
+        # marca lastRun + salva
         try:
-            task["lastRun"] = datetime.now().isoformat()
+            task["lastRun"] = datetime.now().isoformat(timespec="seconds")
             salvar_config(config)
-        except Exception:
-            pass
+        except Exception as e:
+            error_logger.error(f"Erro ao salvar config.json (lastRun/alertSent/sendNow): {e}")
+
     except Exception as e:
         error_msg = f"{task.get('description','(sem descrição)')} | Erro: {str(e)}"
         print(error_msg)
         error_logger.error(error_msg)
 
-def executar_unico_no_dia(task, data_alvo_str: str):
-    """Executa a tarefa apenas no dia alvo na time programada e depois cancela o job."""
-    alvo = _parse_date(data_alvo_str)
-    hoje = date.today()
-    if not alvo:
-        # Se a data estiver inválida, cancela
-        info_logger.warning(f"Tarefa com data inválida cancelada: {task.get('description','(sem descrição)')}")
-        return schedule.CancelJob
 
-    if hoje < alvo:
-        # Ainda não é o dia → não roda (mantém agendado para verificar novamente no próximo 'at')
-        return
-
-    if hoje == alvo:
-        # É o dia → executa e cancela
-        executar_tarefa_se_ativa(task)
-        return schedule.CancelJob
-
-    if hoje > alvo:
-        # Passou do dia → cancela
-        info_logger.info(f"Tarefa expirada cancelada: {task.get('description','(sem descrição)')} ({data_alvo_str})")
-        return schedule.CancelJob
-
-# ---------- AGENDA ----------
-iniciar_worker()
 
 def agendar_requisicoes():
     if not config or 'tasks' not in config:
@@ -291,128 +532,19 @@ def mostrar_agendamentos():
 
 
 # ---------- MAIN LOOP ----------
-
-class _HealthHandler(BaseHTTPRequestHandler):
-    def _set_cors(self):
-        self.send_header("Access-Control-Allow-Origin", "*")
-        self.send_header("Access-Control-Allow-Methods", "GET, OPTIONS")
-        self.send_header("Access-Control-Allow-Headers", "Content-Type")
-
-    def do_OPTIONS(self):
-        self.send_response(204)
-        self._set_cors()
-        self.end_headers()
-
-        # -----------------------------
-    # Helpers internos
-    # -----------------------------
-    def _set_cors(self):
-        self.send_header("Access-Control-Allow-Origin", "*")
-        self.send_header("Access-Control-Allow-Methods", "GET, OPTIONS")
-        self.send_header("Access-Control-Allow-Headers", "Content-Type")
-
-    def _send_json(self, status_code: int, data: dict):
-        payload = json.dumps(data).encode("utf-8")
-
-        self.send_response(status_code)
-        self.send_header("Content-Type", "application/json")
-        self.send_header("Content-Length", str(len(payload)))
-        self._set_cors()
-        self.end_headers()
-
-        self.wfile.write(payload)
-
-    # -----------------------------
-    # Handler principal
-    # -----------------------------
-    def do_GET(self):
-        global config
-        from urllib.parse import parse_qs, urlparse
-
-        parsed = urlparse(self.path)
-        path = parsed.path
-        qs = parse_qs(parsed.query or "")
-
-        # =============================================
-        # ENDPOINT: /run?id=XYZ  → execução manual
-        # =============================================
-        if path == "/run":
-            raw_id = qs.get("id", [""])[0]
-
-            # Busca pelo campo id como string
-            tasks = config.get("tasks", [])
-            task = next((t for t in tasks if str(t.get("id")) == raw_id), None)
-
-            if not task:
-                return self._send_json(404, {
-                    "ok": False,
-                    "error": f"task id '{raw_id}' not found"
-                })
-
-            # Executa a tarefa
-            try:
-                url = task["url"]
-                desc = task["description"]
-                resposta = fazer_get(url, desc)
-
-                # marca lastRun
-                try:
-                    task["lastRun"] = datetime.now().isoformat(timespec="seconds")
-                    salvar_config(config)
-                except Exception as e:
-                    error_logger.error(f"Erro ao salvar lastRun: {e}")        
-            
-                return self._send_json(200, {
-                "ok": True,
-                "status": resposta.get("status"),
-                "tempo": resposta.get("tempo"),
-                "conteudo": resposta.get("conteudo")
-                })
-
-            except Exception as e:
-                return self._send_json(500, {
-                    "ok": False,
-                    "error": str(e)
-                })
-
-        # =============================================
-        # ENDPOINT: /tasks → lista tarefas
-        # =============================================
-        if path == "/tasks":
-            return self._send_json(200, {
-                "ok": True,
-                "tasks": config.get("tasks", [])
-            })
-
-        # =============================================
-        # ROOT / status do servico
-        # =============================================
-        return self._send_json(200, {"ok": True})
-
-
-def iniciar_healthcheck(porta=5051):
-    try:
-        servidor = HTTPServer(("0.0.0.0", porta), _HealthHandler)
-    except OSError as e:
-        error_logger.error(f"Falha ao iniciar healthcheck na porta {porta}: {e}")
-        return None
-
-    thread = threading.Thread(target=servidor.serve_forever, daemon=True)
-    thread.start()
-    info_logger.info(f"Healthcheck rodando em 0.0.0.0:{porta}")
-    return servidor
-
 if __name__ == "__main__":
     print("Script iniciado...")
 
-    intervalo_verificacao = 5  # segundos
+    intervalo_verificacao = 5
 
     if not carregar_config():
         print("Falha ao carregar config.json!")
         exit(1)
 
-    iniciar_healthcheck()
-    iniciar_worker()          # <<< aqui
+    carregar_sites()
+    carregar_email_config()   # <-- antes do worker
+
+    iniciar_worker()
     mostrar_agendamentos()
     agendar_requisicoes()
 

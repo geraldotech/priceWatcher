@@ -1,84 +1,538 @@
-2026-01-22 22:18:18 - INFO - Arquivo config.json carregado com sucesso.
-2026-01-22 22:18:18 - INFO - Healthcheck rodando em 0.0.0.0:5051
-2026-01-22 22:18:18 - INFO - 09:54, 13:10, 18:30    | test timeout    | 🟢
-2026-01-22 22:18:18 - INFO - Agendada (fila): test timeout (09:54)
-2026-01-22 22:18:18 - INFO - Agendada (fila): test timeout (13:10)
-2026-01-22 22:18:18 - INFO - Agendada (fila): test timeout (18:30)
-2026-01-22 22:19:43 - INFO - Recarregando agendamentos após alteração do config.json...
-2026-01-22 22:19:43 - INFO - Arquivo config.json carregado com sucesso.
-2026-01-22 22:19:43 - INFO - Agendada (fila): test timeout (09:54)
-2026-01-22 22:19:43 - INFO - Agendada (fila): test timeout (13:10)
-2026-01-22 22:19:43 - INFO - Agendada (fila): test timeout (18:30)
-2026-01-22 22:19:43 - INFO - 09:54, 13:10, 18:30    | test timeout    | 🟢
-2026-01-22 22:20:03 - INFO - Recarregando agendamentos após alteração do config.json...
-2026-01-22 22:20:03 - INFO - Arquivo config.json carregado com sucesso.
-2026-01-22 22:20:03 - INFO - Agendada (fila): test timeout (22:20)
-2026-01-22 22:20:03 - INFO - Agendada (fila): test timeout (13:10)
-2026-01-22 22:20:03 - INFO - Agendada (fila): test timeout (18:30)
-2026-01-22 22:20:03 - INFO - 22:20, 13:10, 18:30    | test timeout    | 🟢
-2026-01-22 22:20:57 - INFO - Script interrompido pelo usuário.
-2026-01-22 22:20:59 - INFO - Arquivo config.json carregado com sucesso.
-2026-01-22 22:20:59 - INFO - Healthcheck rodando em 0.0.0.0:5051
-2026-01-22 22:20:59 - INFO - 22:20, 13:10, 18:30    | test timeout    | 🟢
-2026-01-22 22:20:59 - INFO - Agendada (fila): test timeout (22:20)
-2026-01-22 22:20:59 - INFO - Agendada (fila): test timeout (13:10)
-2026-01-22 22:20:59 - INFO - Agendada (fila): test timeout (18:30)
-2026-01-22 22:21:02 - INFO - Script interrompido pelo usuário.
-2026-01-22 22:21:09 - INFO - Arquivo config.json carregado com sucesso.
-2026-01-22 22:21:09 - INFO - Healthcheck rodando em 0.0.0.0:5051
-2026-01-22 22:21:09 - INFO - 22:22, 13:10, 18:30    | test timeout    | 🟢
-2026-01-22 22:21:09 - INFO - Agendada (fila): test timeout (22:22)
-2026-01-22 22:21:09 - INFO - Agendada (fila): test timeout (13:10)
-2026-01-22 22:21:09 - INFO - Agendada (fila): test timeout (18:30)
-2026-01-22 22:22:00 - INFO - Enfileirada: test timeout
-2026-01-22 22:23:32 - INFO - Script interrompido pelo usuário.
-2026-01-22 22:23:39 - INFO - Worker de execução lenta iniciado.
-2026-01-22 22:23:39 - INFO - Arquivo config.json carregado com sucesso.
-2026-01-22 22:23:39 - INFO - Healthcheck rodando em 0.0.0.0:5051
-2026-01-22 22:23:39 - INFO - Worker de execução lenta iniciado.
-2026-01-22 22:23:39 - INFO - 22:24, 13:10, 18:30    | test timeout    | 🟢
-2026-01-22 22:23:39 - INFO - Agendada (fila): test timeout (22:24)
-2026-01-22 22:23:39 - INFO - Agendada (fila): test timeout (13:10)
-2026-01-22 22:23:39 - INFO - Agendada (fila): test timeout (18:30)
-2026-01-22 22:24:00 - INFO - Enfileirada: test timeout
-2026-01-22 22:24:01 - INFO - Sucesso na chamada de: api-restful-json.vercel.app/posts
-2026-01-22 22:24:04 - INFO - Recarregando agendamentos após alteração do config.json...
-2026-01-22 22:24:04 - INFO - Arquivo config.json carregado com sucesso.
-2026-01-22 22:24:04 - INFO - Agendada (fila): test timeout (22:24)
-2026-01-22 22:24:04 - INFO - Agendada (fila): test timeout (13:10)
-2026-01-22 22:24:04 - INFO - Agendada (fila): test timeout (18:30)
-2026-01-22 22:24:04 - INFO - 22:24, 13:10, 18:30    | test timeout    | 🟢
-2026-01-22 22:24:39 - INFO - Recarregando agendamentos após alteração do config.json...
-2026-01-22 22:24:39 - INFO - Arquivo config.json carregado com sucesso.
-2026-01-22 22:24:39 - INFO - Agendada (fila): test timeout (22:24)
-2026-01-22 22:24:39 - INFO - Agendada (fila): test timeout (13:10)
-2026-01-22 22:24:39 - INFO - Agendada (fila): test timeout (18:30)
-2026-01-22 22:24:39 - INFO - 22:24, 13:10, 18:30    | test timeout    | 🟢
-2026-01-22 22:24:44 - INFO - Recarregando agendamentos após alteração do config.json...
-2026-01-22 22:24:44 - INFO - Arquivo config.json carregado com sucesso.
-2026-01-22 22:24:44 - INFO - Agendada (fila): test timeout (22:24)
-2026-01-22 22:24:44 - INFO - Agendada (fila): test timeout (22:25)
-2026-01-22 22:24:44 - INFO - Agendada (fila): test timeout (18:30)
-2026-01-22 22:24:44 - INFO - 22:24, 22:25, 18:30    | test timeout    | 🟢
-2026-01-22 22:24:49 - INFO - Recarregando agendamentos após alteração do config.json...
-2026-01-22 22:24:49 - INFO - Arquivo config.json carregado com sucesso.
-2026-01-22 22:24:49 - INFO - Agendada (fila): test timeout (22:24)
-2026-01-22 22:24:49 - INFO - Agendada (fila): test timeout (22:25)
-2026-01-22 22:24:49 - INFO - Agendada (fila): test timeout (22:30)
-2026-01-22 22:24:49 - INFO - 22:24, 22:25, 22:30    | test timeout    | 🟢
-2026-01-22 22:25:00 - INFO - Enfileirada: test timeout
-2026-01-22 22:25:01 - INFO - Sucesso na chamada de: geraldox.netlify.app/src/db/status.json
-2026-01-22 22:25:04 - INFO - Recarregando agendamentos após alteração do config.json...
-2026-01-22 22:25:04 - INFO - Arquivo config.json carregado com sucesso.
-2026-01-22 22:25:04 - INFO - Agendada (fila): test timeout (22:24)
-2026-01-22 22:25:04 - INFO - Agendada (fila): test timeout (22:25)
-2026-01-22 22:25:04 - INFO - Agendada (fila): test timeout (22:30)
-2026-01-22 22:25:04 - INFO - 22:24, 22:25, 22:30    | test timeout    | 🟢
-2026-01-22 22:30:00 - INFO - Enfileirada: test timeout
-2026-01-22 22:30:00 - INFO - Sucesso na chamada de: geraldox.netlify.app/src/db/status.json
-2026-01-22 22:30:05 - INFO - Recarregando agendamentos após alteração do config.json...
-2026-01-22 22:30:05 - INFO - Arquivo config.json carregado com sucesso.
-2026-01-22 22:30:05 - INFO - Agendada (fila): test timeout (22:24)
-2026-01-22 22:30:05 - INFO - Agendada (fila): test timeout (22:25)
-2026-01-22 22:30:05 - INFO - Agendada (fila): test timeout (22:30)
-2026-01-22 22:30:05 - INFO - 22:24, 22:25, 22:30    | test timeout    | 🟢
+2026-01-24 17:47:43 - INFO - Script interrompido pelo usuário.
+2026-01-24 17:47:46 - INFO - Arquivo config.json carregado com sucesso.
+2026-01-24 17:47:46 - INFO - Arquivo sites.json carregado com sucesso (db\sites.json).
+2026-01-24 17:47:46 - INFO - Configuração de email carregada | destinatarios=['geraldo.filho92@hotmail.com', 'geraldo.filho92@gmail.com']
+2026-01-24 17:47:46 - INFO - Worker de execução lenta iniciado.
+2026-01-24 17:47:46 - INFO - 16:55, 17:46           | zonasul: cafe 3 | 🟢
+2026-01-24 17:47:46 - INFO - 16:58, 17:00           | zonasul: azeite | 🔴
+2026-01-24 17:47:46 - INFO - 17:05                  | amazon: Samsung | 🔴
+2026-01-24 17:47:46 - INFO - Agendada (fila): zonasul: cafe 3 coracoes (16:55)
+2026-01-24 17:47:46 - INFO - Agendada (fila): zonasul: cafe 3 coracoes (17:46)
+2026-01-24 17:47:46 - INFO - Tarefa desativada: zonasul: azeite-extra-virgem
+2026-01-24 17:47:46 - INFO - Tarefa desativada: amazon: Samsung Galaxy S24U
+2026-01-24 17:47:56 - INFO - Recarregando agendamentos após alteração do config.json...
+2026-01-24 17:47:56 - INFO - Arquivo config.json carregado com sucesso.
+2026-01-24 17:47:56 - INFO - Agendada (fila): zonasul: cafe 3 coracoes (16:55)
+2026-01-24 17:47:56 - INFO - Agendada (fila): zonasul: cafe 3 coracoes (17:48)
+2026-01-24 17:47:56 - INFO - Tarefa desativada: zonasul: azeite-extra-virgem
+2026-01-24 17:47:56 - INFO - Tarefa desativada: amazon: Samsung Galaxy S24U
+2026-01-24 17:47:56 - INFO - 16:55, 17:48           | zonasul: cafe 3 | 🟢
+2026-01-24 17:47:56 - INFO - 16:58, 17:00           | zonasul: azeite | 🔴
+2026-01-24 17:47:56 - INFO - 17:05                  | amazon: Samsung | 🔴
+2026-01-24 17:48:00 - INFO - Enfileirada: zonasul: cafe 3 coracoes
+2026-01-24 17:48:00 - WARNING - FAIL extract: www.zonasul.com.br/capsulas-de-cappuccino-classic-3-coracoes-com-10-unidades-799491/p | 0.38s | Selector não encontrado: .vtex-difference__por
+2026-01-24 17:48:01 - INFO - Recarregando agendamentos após alteração do config.json...
+2026-01-24 17:48:01 - INFO - Arquivo config.json carregado com sucesso.
+2026-01-24 17:48:01 - INFO - Agendada (fila): zonasul: cafe 3 coracoes (16:55)
+2026-01-24 17:48:01 - INFO - Agendada (fila): zonasul: cafe 3 coracoes (17:48)
+2026-01-24 17:48:01 - INFO - Tarefa desativada: zonasul: azeite-extra-virgem
+2026-01-24 17:48:01 - INFO - Tarefa desativada: amazon: Samsung Galaxy S24U
+2026-01-24 17:48:01 - INFO - 16:55, 17:48           | zonasul: cafe 3 | 🟢
+2026-01-24 17:48:01 - INFO - 16:58, 17:00           | zonasul: azeite | 🔴
+2026-01-24 17:48:01 - INFO - 17:05                  | amazon: Samsung | 🔴
+2026-01-24 17:50:01 - INFO - Recarregando agendamentos após alteração do config.json...
+2026-01-24 17:50:01 - INFO - Arquivo config.json carregado com sucesso.
+2026-01-24 17:50:01 - INFO - Agendada (fila): zonasul: cafe 3 coracoes (16:55)
+2026-01-24 17:50:01 - INFO - Agendada (fila): zonasul: cafe 3 coracoes (17:48)
+2026-01-24 17:50:01 - INFO - Tarefa desativada: zonasul: azeite-extra-virgem
+2026-01-24 17:50:01 - INFO - Tarefa desativada: amazon: Samsung Galaxy S24U
+2026-01-24 17:50:01 - INFO - 16:55, 17:48           | zonasul: cafe 3 | 🟢
+2026-01-24 17:50:01 - INFO - 16:58, 17:00           | zonasul: azeite | 🔴
+2026-01-24 17:50:01 - INFO - 17:05                  | amazon: Samsung | 🔴
+2026-01-24 17:50:06 - INFO - Recarregando agendamentos após alteração do config.json...
+2026-01-24 17:50:06 - INFO - Arquivo config.json carregado com sucesso.
+2026-01-24 17:50:06 - INFO - Agendada (fila): zonasul: cafe 3 coracoes (16:55)
+2026-01-24 17:50:06 - INFO - Agendada (fila): zonasul: cafe 3 coracoes (17:51)
+2026-01-24 17:50:06 - INFO - Tarefa desativada: zonasul: azeite-extra-virgem
+2026-01-24 17:50:06 - INFO - Tarefa desativada: amazon: Samsung Galaxy S24U
+2026-01-24 17:50:06 - INFO - 16:55, 17:51           | zonasul: cafe 3 | 🟢
+2026-01-24 17:50:06 - INFO - 16:58, 17:00           | zonasul: azeite | 🔴
+2026-01-24 17:50:06 - INFO - 17:05                  | amazon: Samsung | 🔴
+2026-01-24 17:50:36 - INFO - Recarregando agendamentos após alteração do config.json...
+2026-01-24 17:50:36 - INFO - Arquivo config.json carregado com sucesso.
+2026-01-24 17:50:36 - INFO - Agendada (fila): zonasul: cafe 3 coracoes (16:55)
+2026-01-24 17:50:36 - INFO - Agendada (fila): zonasul: cafe 3 coracoes (17:51)
+2026-01-24 17:50:36 - INFO - Tarefa desativada: zonasul: azeite-extra-virgem
+2026-01-24 17:50:36 - INFO - Tarefa desativada: amazon: Samsung Galaxy S24U
+2026-01-24 17:50:36 - INFO - 16:55, 17:51           | zonasul: cafe 3 | 🟢
+2026-01-24 17:50:36 - INFO - 16:58, 17:00           | zonasul: azeite | 🔴
+2026-01-24 17:50:36 - INFO - 17:05                  | amazon: Samsung | 🔴
+2026-01-24 17:50:41 - INFO - Recarregando agendamentos após alteração do config.json...
+2026-01-24 17:50:41 - INFO - Arquivo config.json carregado com sucesso.
+2026-01-24 17:50:41 - INFO - Agendada (fila): zonasul: cafe 3 coracoes (16:55)
+2026-01-24 17:50:41 - INFO - Agendada (fila): zonasul: cafe 3 coracoes (17:51)
+2026-01-24 17:50:41 - INFO - Tarefa desativada: zonasul: azeite-extra-virgem
+2026-01-24 17:50:41 - INFO - Tarefa desativada: amazon: Samsung Galaxy S24U
+2026-01-24 17:50:41 - INFO - 16:55, 17:51           | zonasul: cafe 3 | 🟢
+2026-01-24 17:50:41 - INFO - 16:58, 17:00           | zonasul: azeite | 🔴
+2026-01-24 17:50:41 - INFO - 17:05                  | amazon: Samsung | 🔴
+2026-01-24 17:51:00 - INFO - Enfileirada: zonasul: cafe 3 coracoes
+2026-01-24 17:51:31 - INFO - Recarregando agendamentos após alteração do config.json...
+2026-01-24 17:51:31 - INFO - Arquivo config.json carregado com sucesso.
+2026-01-24 17:51:31 - INFO - Agendada (fila): zonasul: cafe 3 coracoes (16:55)
+2026-01-24 17:51:31 - INFO - Agendada (fila): zonasul: cafe 3 coracoes (17:51)
+2026-01-24 17:51:31 - INFO - Tarefa desativada: zonasul: azeite-extra-virgem
+2026-01-24 17:51:31 - INFO - Tarefa desativada: amazon: Samsung Galaxy S24U
+2026-01-24 17:51:31 - INFO - 16:55, 17:51           | zonasul: cafe 3 | 🟢
+2026-01-24 17:51:31 - INFO - 16:58, 17:00           | zonasul: azeite | 🔴
+2026-01-24 17:51:31 - INFO - 17:05                  | amazon: Samsung | 🔴
+2026-01-24 17:57:16 - INFO - Recarregando agendamentos após alteração do config.json...
+2026-01-24 17:57:16 - INFO - Arquivo config.json carregado com sucesso.
+2026-01-24 17:57:16 - INFO - Agendada (fila): zonasul: cafe 3 coracoes (16:55)
+2026-01-24 17:57:16 - INFO - Agendada (fila): zonasul: cafe 3 coracoes (17:58)
+2026-01-24 17:57:16 - INFO - Tarefa desativada: zonasul: azeite-extra-virgem
+2026-01-24 17:57:16 - INFO - Tarefa desativada: amazon: Samsung Galaxy S24U
+2026-01-24 17:57:16 - INFO - 16:55, 17:58           | zonasul: cafe 3 | 🟢
+2026-01-24 17:57:16 - INFO - 16:58, 17:00           | zonasul: azeite | 🔴
+2026-01-24 17:57:16 - INFO - 17:05                  | amazon: Samsung | 🔴
+2026-01-24 17:58:00 - INFO - Enfileirada: zonasul: cafe 3 coracoes
+2026-01-24 17:58:00 - INFO - Alerta já disparado | zonasul: cafe 3 coracoes | atual=15.98 | target=15.98
+2026-01-24 17:58:01 - INFO - Recarregando agendamentos após alteração do config.json...
+2026-01-24 17:58:01 - INFO - Arquivo config.json carregado com sucesso.
+2026-01-24 17:58:01 - INFO - Agendada (fila): zonasul: cafe 3 coracoes (16:55)
+2026-01-24 17:58:01 - INFO - Agendada (fila): zonasul: cafe 3 coracoes (17:58)
+2026-01-24 17:58:01 - INFO - Tarefa desativada: zonasul: azeite-extra-virgem
+2026-01-24 17:58:01 - INFO - Tarefa desativada: amazon: Samsung Galaxy S24U
+2026-01-24 17:58:01 - INFO - 16:55, 17:58           | zonasul: cafe 3 | 🟢
+2026-01-24 17:58:01 - INFO - 16:58, 17:00           | zonasul: azeite | 🔴
+2026-01-24 17:58:01 - INFO - 17:05                  | amazon: Samsung | 🔴
+2026-01-24 18:01:36 - INFO - Recarregando agendamentos após alteração do config.json...
+2026-01-24 18:01:36 - INFO - Arquivo config.json carregado com sucesso.
+2026-01-24 18:01:36 - INFO - Agendada (fila): zonasul: cafe 3 coracoes (16:55)
+2026-01-24 18:01:36 - INFO - Agendada (fila): zonasul: cafe 3 coracoes (18:58)
+2026-01-24 18:01:36 - INFO - Tarefa desativada: zonasul: azeite-extra-virgem
+2026-01-24 18:01:36 - INFO - Tarefa desativada: amazon: Samsung Galaxy S24U
+2026-01-24 18:01:36 - INFO - 16:55, 18:58           | zonasul: cafe 3 | 🟢
+2026-01-24 18:01:36 - INFO - 16:58, 17:00           | zonasul: azeite | 🔴
+2026-01-24 18:01:36 - INFO - 17:05                  | amazon: Samsung | 🔴
+2026-01-24 18:01:41 - INFO - Script interrompido pelo usuário.
+2026-01-24 18:01:42 - INFO - Arquivo config.json carregado com sucesso.
+2026-01-24 18:01:42 - INFO - Arquivo sites.json carregado com sucesso (db\sites.json).
+2026-01-24 18:01:42 - INFO - Configuração de email carregada | destinatarios=['geraldo.filho92@hotmail.com', 'geraldo.filho92@gmail.com']
+2026-01-24 18:01:42 - INFO - Worker de execução lenta iniciado.
+2026-01-24 18:01:42 - INFO - 16:55, 18:02           | zonasul: cafe 3 | 🟢
+2026-01-24 18:01:42 - INFO - 16:58, 17:00           | zonasul: azeite | 🔴
+2026-01-24 18:01:42 - INFO - 17:05                  | amazon: Samsung | 🔴
+2026-01-24 18:01:42 - INFO - Agendada (fila): zonasul: cafe 3 coracoes (16:55)
+2026-01-24 18:01:42 - INFO - Agendada (fila): zonasul: cafe 3 coracoes (18:02)
+2026-01-24 18:01:42 - INFO - Tarefa desativada: zonasul: azeite-extra-virgem
+2026-01-24 18:01:42 - INFO - Tarefa desativada: amazon: Samsung Galaxy S24U
+2026-01-24 18:02:00 - INFO - Enfileirada: zonasul: cafe 3 coracoes
+2026-01-24 18:02:02 - INFO - Recarregando agendamentos após alteração do config.json...
+2026-01-24 18:02:02 - INFO - Arquivo config.json carregado com sucesso.
+2026-01-24 18:02:02 - INFO - Agendada (fila): zonasul: cafe 3 coracoes (16:55)
+2026-01-24 18:02:02 - INFO - Agendada (fila): zonasul: cafe 3 coracoes (18:02)
+2026-01-24 18:02:02 - INFO - Tarefa desativada: zonasul: azeite-extra-virgem
+2026-01-24 18:02:02 - INFO - Tarefa desativada: amazon: Samsung Galaxy S24U
+2026-01-24 18:02:02 - INFO - 16:55, 18:02           | zonasul: cafe 3 | 🟢
+2026-01-24 18:02:02 - INFO - 16:58, 17:00           | zonasul: azeite | 🔴
+2026-01-24 18:02:02 - INFO - 17:05                  | amazon: Samsung | 🔴
+2026-01-24 18:05:02 - INFO - Recarregando agendamentos após alteração do config.json...
+2026-01-24 18:05:02 - ERROR - Erro ao decodificar o arquivo config.json.
+2026-01-24 18:05:07 - INFO - Recarregando agendamentos após alteração do config.json...
+2026-01-24 18:05:07 - INFO - Arquivo config.json carregado com sucesso.
+2026-01-24 18:05:07 - INFO - Agendada (fila): zonasul: cafe 3 coracoes (16:55)
+2026-01-24 18:05:07 - INFO - Agendada (fila): zonasul: cafe 3 coracoes (18:02)
+2026-01-24 18:05:07 - INFO - Tarefa desativada: zonasul: azeite-extra-virgem
+2026-01-24 18:05:07 - INFO - Tarefa desativada: amazon: Samsung Galaxy S24U
+2026-01-24 18:05:07 - INFO - 16:55, 18:02           | zonasul: cafe 3 | 🟢
+2026-01-24 18:05:07 - INFO - 16:58, 17:00           | zonasul: azeite | 🔴
+2026-01-24 18:05:07 - INFO - 17:05                  | amazon: Samsung | 🔴
+2026-01-24 18:05:12 - INFO - Recarregando agendamentos após alteração do config.json...
+2026-01-24 18:05:12 - INFO - Arquivo config.json carregado com sucesso.
+2026-01-24 18:05:12 - INFO - Agendada (fila): zonasul: cafe 3 coracoes (16:55)
+2026-01-24 18:05:12 - INFO - Agendada (fila): zonasul: cafe 3 coracoes (18:06)
+2026-01-24 18:05:12 - INFO - Tarefa desativada: zonasul: azeite-extra-virgem
+2026-01-24 18:05:12 - INFO - Tarefa desativada: amazon: Samsung Galaxy S24U
+2026-01-24 18:05:12 - INFO - 16:55, 18:06           | zonasul: cafe 3 | 🟢
+2026-01-24 18:05:12 - INFO - 16:58, 17:00           | zonasul: azeite | 🔴
+2026-01-24 18:05:12 - INFO - 17:05                  | amazon: Samsung | 🔴
+2026-01-24 18:06:00 - INFO - Enfileirada: zonasul: cafe 3 coracoes
+2026-01-24 18:06:33 - INFO - Recarregando agendamentos após alteração do config.json...
+2026-01-24 18:06:33 - INFO - Arquivo config.json carregado com sucesso.
+2026-01-24 18:06:33 - INFO - Agendada (fila): zonasul: cafe 3 coracoes (16:55)
+2026-01-24 18:06:33 - INFO - Agendada (fila): zonasul: cafe 3 coracoes (18:06)
+2026-01-24 18:06:33 - INFO - Tarefa desativada: zonasul: azeite-extra-virgem
+2026-01-24 18:06:33 - INFO - Tarefa desativada: amazon: Samsung Galaxy S24U
+2026-01-24 18:06:33 - INFO - 16:55, 18:06           | zonasul: cafe 3 | 🟢
+2026-01-24 18:06:33 - INFO - 16:58, 17:00           | zonasul: azeite | 🔴
+2026-01-24 18:06:33 - INFO - 17:05                  | amazon: Samsung | 🔴
+2026-01-24 18:21:38 - INFO - Recarregando agendamentos após alteração do config.json...
+2026-01-24 18:21:38 - INFO - Arquivo config.json carregado com sucesso.
+2026-01-24 18:21:38 - INFO - Agendada (fila): zonasul: cafe 3 coracoes (16:55)
+2026-01-24 18:21:38 - INFO - Agendada (fila): zonasul: cafe 3 coracoes (18:06)
+2026-01-24 18:21:38 - INFO - Tarefa desativada: zonasul: azeite-extra-virgem
+2026-01-24 18:21:38 - INFO - Agendada (fila): amazon: Samsung Galaxy S24U (17:05)
+2026-01-24 18:21:38 - INFO - 16:55, 18:06           | zonasul: cafe 3 | 🟢
+2026-01-24 18:21:38 - INFO - 16:58, 17:00           | zonasul: azeite | 🔴
+2026-01-24 18:21:38 - INFO - 17:05                  | amazon: Samsung | 🟢
+2026-01-24 18:23:03 - INFO - Recarregando agendamentos após alteração do config.json...
+2026-01-24 18:23:03 - INFO - Arquivo config.json carregado com sucesso.
+2026-01-24 18:23:03 - INFO - Agendada (fila): zonasul: cafe 3 coracoes (16:55)
+2026-01-24 18:23:03 - INFO - Agendada (fila): zonasul: cafe 3 coracoes (18:06)
+2026-01-24 18:23:03 - INFO - Tarefa desativada: zonasul: azeite-extra-virgem
+2026-01-24 18:23:03 - INFO - Agendada (fila): amazon: Samsung Galaxy S24U (18:23)
+2026-01-24 18:23:03 - INFO - 16:55, 18:06           | zonasul: cafe 3 | 🟢
+2026-01-24 18:23:03 - INFO - 16:58, 17:00           | zonasul: azeite | 🔴
+2026-01-24 18:23:03 - INFO - 18:23                  | amazon: Samsung | 🟢
+2026-01-24 18:25:58 - INFO - Recarregando agendamentos após alteração do config.json...
+2026-01-24 18:25:58 - INFO - Arquivo config.json carregado com sucesso.
+2026-01-24 18:25:58 - INFO - Agendada (fila): zonasul: cafe 3 coracoes (16:55)
+2026-01-24 18:25:58 - INFO - Agendada (fila): zonasul: cafe 3 coracoes (18:06)
+2026-01-24 18:25:58 - INFO - Tarefa desativada: zonasul: azeite-extra-virgem
+2026-01-24 18:25:58 - INFO - Agendada (fila): amazon: Samsung Galaxy S24U (18:23)
+2026-01-24 18:25:58 - INFO - 16:55, 18:06           | zonasul: cafe 3 | 🟢
+2026-01-24 18:25:58 - INFO - 16:58, 17:00           | zonasul: azeite | 🔴
+2026-01-24 18:25:58 - INFO - 18:23                  | amazon: Samsung | 🟢
+2026-01-24 18:26:08 - INFO - Recarregando agendamentos após alteração do config.json...
+2026-01-24 18:26:08 - INFO - Arquivo config.json carregado com sucesso.
+2026-01-24 18:26:08 - INFO - Agendada (fila): zonasul: cafe 3 coracoes (16:55)
+2026-01-24 18:26:08 - INFO - Agendada (fila): zonasul: cafe 3 coracoes (18:06)
+2026-01-24 18:26:08 - INFO - Tarefa desativada: zonasul: azeite-extra-virgem
+2026-01-24 18:26:08 - INFO - Agendada (fila): amazon: Samsung Galaxy S24U (18:27)
+2026-01-24 18:26:08 - INFO - 16:55, 18:06           | zonasul: cafe 3 | 🟢
+2026-01-24 18:26:08 - INFO - 16:58, 17:00           | zonasul: azeite | 🔴
+2026-01-24 18:26:08 - INFO - 18:27                  | amazon: Samsung | 🟢
+2026-01-24 18:27:00 - INFO - Enfileirada: amazon: Samsung Galaxy S24U
+2026-01-24 18:27:03 - INFO - Recarregando agendamentos após alteração do config.json...
+2026-01-24 18:27:03 - INFO - Arquivo config.json carregado com sucesso.
+2026-01-24 18:27:03 - INFO - Agendada (fila): zonasul: cafe 3 coracoes (16:55)
+2026-01-24 18:27:03 - INFO - Agendada (fila): zonasul: cafe 3 coracoes (18:06)
+2026-01-24 18:27:03 - INFO - Tarefa desativada: zonasul: azeite-extra-virgem
+2026-01-24 18:27:03 - INFO - Agendada (fila): amazon: Samsung Galaxy S24U (18:27)
+2026-01-24 18:27:03 - INFO - 16:55, 18:06           | zonasul: cafe 3 | 🟢
+2026-01-24 18:27:03 - INFO - 16:58, 17:00           | zonasul: azeite | 🔴
+2026-01-24 18:27:03 - INFO - 18:27                  | amazon: Samsung | 🟢
+2026-01-24 18:30:55 - INFO - Script interrompido pelo usuário.
+2026-01-24 18:30:56 - INFO - Arquivo config.json carregado com sucesso.
+2026-01-24 18:30:56 - INFO - Arquivo sites.json carregado com sucesso (db\sites.json).
+2026-01-24 18:30:56 - INFO - Configuração de email carregada | destinatarios=['geraldo.filho92@hotmail.com', 'geraldo.filho92@gmail.com']
+2026-01-24 18:30:56 - INFO - Worker de execução lenta iniciado.
+2026-01-24 18:30:56 - INFO - 16:55, 18:06           | zonasul: cafe 3 | 🟢
+2026-01-24 18:30:56 - INFO - 16:58, 17:00           | zonasul: azeite | 🔴
+2026-01-24 18:30:56 - INFO - 18:27                  | amazon: Samsung | 🟢
+2026-01-24 18:30:56 - INFO - Agendada (fila): zonasul: cafe 3 coracoes (16:55)
+2026-01-24 18:30:56 - INFO - Agendada (fila): zonasul: cafe 3 coracoes (18:06)
+2026-01-24 18:30:56 - INFO - Tarefa desativada: zonasul: azeite-extra-virgem
+2026-01-24 18:30:56 - INFO - Agendada (fila): amazon: Samsung Galaxy S24U (18:27)
+2026-01-24 18:31:16 - INFO - Recarregando agendamentos após alteração do config.json...
+2026-01-24 18:31:16 - ERROR - Erro ao decodificar o arquivo config.json.
+2026-01-24 18:31:21 - INFO - Recarregando agendamentos após alteração do config.json...
+2026-01-24 18:31:21 - INFO - Arquivo config.json carregado com sucesso.
+2026-01-24 18:31:21 - INFO - Agendada (fila): zonasul: cafe 3 coracoes (16:55)
+2026-01-24 18:31:21 - INFO - Agendada (fila): zonasul: cafe 3 coracoes (18:06)
+2026-01-24 18:31:21 - INFO - Tarefa desativada: zonasul: azeite-extra-virgem
+2026-01-24 18:31:21 - INFO - Agendada (fila): amazon: Samsung Galaxy S24U (18:27)
+2026-01-24 18:31:21 - INFO - 16:55, 18:06           | zonasul: cafe 3 | 🟢
+2026-01-24 18:31:21 - INFO - 16:58, 17:00           | zonasul: azeite | 🔴
+2026-01-24 18:31:21 - INFO - 18:27                  | amazon: Samsung | 🟢
+2026-01-24 18:31:26 - INFO - Recarregando agendamentos após alteração do config.json...
+2026-01-24 18:31:26 - INFO - Arquivo config.json carregado com sucesso.
+2026-01-24 18:31:26 - INFO - Agendada (fila): zonasul: cafe 3 coracoes (16:55)
+2026-01-24 18:31:26 - INFO - Agendada (fila): zonasul: cafe 3 coracoes (18:06)
+2026-01-24 18:31:26 - INFO - Tarefa desativada: zonasul: azeite-extra-virgem
+2026-01-24 18:31:26 - INFO - Agendada (fila): amazon: Samsung Galaxy S24U (18:32)
+2026-01-24 18:31:26 - INFO - 16:55, 18:06           | zonasul: cafe 3 | 🟢
+2026-01-24 18:31:26 - INFO - 16:58, 17:00           | zonasul: azeite | 🔴
+2026-01-24 18:31:26 - INFO - 18:32                  | amazon: Samsung | 🟢
+2026-01-24 18:32:00 - INFO - Enfileirada: amazon: Samsung Galaxy S24U
+2026-01-24 18:32:01 - INFO - Recarregando agendamentos após alteração do config.json...
+2026-01-24 18:32:01 - INFO - Arquivo config.json carregado com sucesso.
+2026-01-24 18:32:01 - INFO - Agendada (fila): zonasul: cafe 3 coracoes (16:55)
+2026-01-24 18:32:01 - INFO - Agendada (fila): zonasul: cafe 3 coracoes (18:06)
+2026-01-24 18:32:01 - INFO - Tarefa desativada: zonasul: azeite-extra-virgem
+2026-01-24 18:32:01 - INFO - Agendada (fila): amazon: Samsung Galaxy S24U (18:32)
+2026-01-24 18:32:01 - INFO - 16:55, 18:06           | zonasul: cafe 3 | 🟢
+2026-01-24 18:32:01 - INFO - 16:58, 17:00           | zonasul: azeite | 🔴
+2026-01-24 18:32:01 - INFO - 18:32                  | amazon: Samsung | 🟢
+2026-01-24 18:35:01 - INFO - Recarregando agendamentos após alteração do config.json...
+2026-01-24 18:35:01 - ERROR - Erro ao decodificar o arquivo config.json.
+2026-01-24 18:35:06 - INFO - Recarregando agendamentos após alteração do config.json...
+2026-01-24 18:35:06 - INFO - Arquivo config.json carregado com sucesso.
+2026-01-24 18:35:06 - INFO - Agendada (fila): zonasul: cafe 3 coracoes (16:55)
+2026-01-24 18:35:06 - INFO - Agendada (fila): zonasul: cafe 3 coracoes (18:06)
+2026-01-24 18:35:06 - INFO - Tarefa desativada: zonasul: azeite-extra-virgem
+2026-01-24 18:35:06 - INFO - Agendada (fila): amazon: Samsung Galaxy S24U (18:32)
+2026-01-24 18:35:06 - INFO - 16:55, 18:06           | zonasul: cafe 3 | 🟢
+2026-01-24 18:35:06 - INFO - 16:58, 17:00           | zonasul: azeite | 🔴
+2026-01-24 18:35:06 - INFO - 18:32                  | amazon: Samsung | 🟢
+2026-01-24 18:36:24 - INFO - Script interrompido pelo usuário.
+2026-01-24 18:36:25 - INFO - Arquivo config.json carregado com sucesso.
+2026-01-24 18:36:25 - INFO - Arquivo sites.json carregado com sucesso (db\sites.json).
+2026-01-24 18:36:25 - INFO - Configuração de email carregada | destinatarios=['geraldo.filho92@hotmail.com', 'geraldo.filho92@gmail.com']
+2026-01-24 18:36:25 - INFO - Worker de execução lenta iniciado.
+2026-01-24 18:36:25 - INFO - 16:55, 18:06           | zonasul: cafe 3 | 🟢
+2026-01-24 18:36:25 - INFO - 16:58, 17:00           | zonasul: azeite | 🔴
+2026-01-24 18:36:25 - INFO - 18:32                  | amazon: Samsung | 🟢
+2026-01-24 18:36:25 - INFO - Agendada (fila): zonasul: cafe 3 coracoes (16:55)
+2026-01-24 18:36:25 - INFO - Agendada (fila): zonasul: cafe 3 coracoes (18:06)
+2026-01-24 18:36:25 - INFO - Tarefa desativada: zonasul: azeite-extra-virgem
+2026-01-24 18:36:25 - INFO - Agendada (fila): amazon: Samsung Galaxy S24U (18:32)
+2026-01-24 18:36:40 - INFO - Recarregando agendamentos após alteração do config.json...
+2026-01-24 18:36:40 - INFO - Arquivo config.json carregado com sucesso.
+2026-01-24 18:36:40 - INFO - Agendada (fila): zonasul: cafe 3 coracoes (16:55)
+2026-01-24 18:36:40 - INFO - Agendada (fila): zonasul: cafe 3 coracoes (18:06)
+2026-01-24 18:36:40 - INFO - Tarefa desativada: zonasul: azeite-extra-virgem
+2026-01-24 18:36:40 - INFO - Agendada (fila): amazon: Samsung Galaxy S24U (18:32)
+2026-01-24 18:36:40 - INFO - 16:55, 18:06           | zonasul: cafe 3 | 🟢
+2026-01-24 18:36:40 - INFO - 16:58, 17:00           | zonasul: azeite | 🔴
+2026-01-24 18:36:40 - INFO - 18:32                  | amazon: Samsung | 🟢
+2026-01-24 18:36:45 - INFO - Recarregando agendamentos após alteração do config.json...
+2026-01-24 18:36:45 - INFO - Arquivo config.json carregado com sucesso.
+2026-01-24 18:36:45 - INFO - Agendada (fila): zonasul: cafe 3 coracoes (16:55)
+2026-01-24 18:36:45 - INFO - Agendada (fila): zonasul: cafe 3 coracoes (18:06)
+2026-01-24 18:36:45 - INFO - Tarefa desativada: zonasul: azeite-extra-virgem
+2026-01-24 18:36:45 - INFO - Agendada (fila): amazon: Samsung Galaxy S24U (18:37)
+2026-01-24 18:36:45 - INFO - 16:55, 18:06           | zonasul: cafe 3 | 🟢
+2026-01-24 18:36:45 - INFO - 16:58, 17:00           | zonasul: azeite | 🔴
+2026-01-24 18:36:45 - INFO - 18:37                  | amazon: Samsung | 🟢
+2026-01-24 18:37:00 - INFO - Enfileirada: amazon: Samsung Galaxy S24U
+2026-01-24 18:38:01 - INFO - Script interrompido pelo usuário.
+2026-01-24 18:38:02 - INFO - Arquivo config.json carregado com sucesso.
+2026-01-24 18:38:02 - INFO - Arquivo sites.json carregado com sucesso (db\sites.json).
+2026-01-24 18:38:02 - INFO - Configuração de email carregada | destinatarios=['geraldo.filho92@hotmail.com', 'geraldo.filho92@gmail.com']
+2026-01-24 18:38:02 - INFO - Worker de execução lenta iniciado.
+2026-01-24 18:38:02 - INFO - 16:55, 18:06           | zonasul: cafe 3 | 🟢
+2026-01-24 18:38:02 - INFO - 16:58, 17:00           | zonasul: azeite | 🔴
+2026-01-24 18:38:02 - INFO - 18:37                  | amazon: Samsung | 🟢
+2026-01-24 18:38:02 - INFO - Agendada (fila): zonasul: cafe 3 coracoes (16:55)
+2026-01-24 18:38:02 - INFO - Agendada (fila): zonasul: cafe 3 coracoes (18:06)
+2026-01-24 18:38:02 - INFO - Tarefa desativada: zonasul: azeite-extra-virgem
+2026-01-24 18:38:02 - INFO - Agendada (fila): amazon: Samsung Galaxy S24U (18:37)
+2026-01-24 18:38:12 - INFO - Recarregando agendamentos após alteração do config.json...
+2026-01-24 18:38:12 - INFO - Arquivo config.json carregado com sucesso.
+2026-01-24 18:38:12 - INFO - Agendada (fila): zonasul: cafe 3 coracoes (16:55)
+2026-01-24 18:38:12 - INFO - Agendada (fila): zonasul: cafe 3 coracoes (18:06)
+2026-01-24 18:38:12 - INFO - Tarefa desativada: zonasul: azeite-extra-virgem
+2026-01-24 18:38:12 - INFO - Agendada (fila): amazon: Samsung Galaxy S24U (18:39)
+2026-01-24 18:38:12 - INFO - 16:55, 18:06           | zonasul: cafe 3 | 🟢
+2026-01-24 18:38:12 - INFO - 16:58, 17:00           | zonasul: azeite | 🔴
+2026-01-24 18:38:12 - INFO - 18:39                  | amazon: Samsung | 🟢
+2026-01-24 18:38:17 - INFO - Recarregando agendamentos após alteração do config.json...
+2026-01-24 18:38:17 - INFO - Arquivo config.json carregado com sucesso.
+2026-01-24 18:38:17 - INFO - Agendada (fila): zonasul: cafe 3 coracoes (16:55)
+2026-01-24 18:38:17 - INFO - Agendada (fila): zonasul: cafe 3 coracoes (18:38)
+2026-01-24 18:38:17 - INFO - Tarefa desativada: zonasul: azeite-extra-virgem
+2026-01-24 18:38:17 - INFO - Agendada (fila): amazon: Samsung Galaxy S24U (18:39)
+2026-01-24 18:38:17 - INFO - 16:55, 18:38           | zonasul: cafe 3 | 🟢
+2026-01-24 18:38:17 - INFO - 16:58, 17:00           | zonasul: azeite | 🔴
+2026-01-24 18:38:17 - INFO - 18:39                  | amazon: Samsung | 🟢
+2026-01-24 18:38:22 - INFO - Recarregando agendamentos após alteração do config.json...
+2026-01-24 18:38:22 - INFO - Arquivo config.json carregado com sucesso.
+2026-01-24 18:38:22 - INFO - Agendada (fila): zonasul: cafe 3 coracoes (16:55)
+2026-01-24 18:38:22 - INFO - Agendada (fila): zonasul: cafe 3 coracoes (18:39)
+2026-01-24 18:38:22 - INFO - Tarefa desativada: zonasul: azeite-extra-virgem
+2026-01-24 18:38:22 - INFO - Agendada (fila): amazon: Samsung Galaxy S24U (18:39)
+2026-01-24 18:38:22 - INFO - 16:55, 18:39           | zonasul: cafe 3 | 🟢
+2026-01-24 18:38:22 - INFO - 16:58, 17:00           | zonasul: azeite | 🔴
+2026-01-24 18:38:22 - INFO - 18:39                  | amazon: Samsung | 🟢
+2026-01-24 18:38:27 - INFO - Recarregando agendamentos após alteração do config.json...
+2026-01-24 18:38:27 - INFO - Arquivo config.json carregado com sucesso.
+2026-01-24 18:38:27 - INFO - Agendada (fila): zonasul: cafe 3 coracoes (16:55)
+2026-01-24 18:38:27 - INFO - Agendada (fila): zonasul: cafe 3 coracoes (18:39)
+2026-01-24 18:38:27 - INFO - Tarefa desativada: zonasul: azeite-extra-virgem
+2026-01-24 18:38:27 - INFO - Agendada (fila): amazon: Samsung Galaxy S24U (18:39)
+2026-01-24 18:38:27 - INFO - 16:55, 18:39           | zonasul: cafe 3 | 🟢
+2026-01-24 18:38:27 - INFO - 16:58, 17:00           | zonasul: azeite | 🔴
+2026-01-24 18:38:27 - INFO - 18:39                  | amazon: Samsung | 🟢
+2026-01-24 18:39:00 - INFO - Enfileirada: zonasul: cafe 3 coracoes
+2026-01-24 18:39:00 - INFO - Enfileirada: amazon: Samsung Galaxy S24U
+2026-01-24 18:40:02 - INFO - Recarregando agendamentos após alteração do config.json...
+2026-01-24 18:40:02 - INFO - Arquivo config.json carregado com sucesso.
+2026-01-24 18:40:02 - INFO - Agendada (fila): zonasul: cafe 3 coracoes (16:55)
+2026-01-24 18:40:02 - INFO - Agendada (fila): zonasul: cafe 3 coracoes (18:39)
+2026-01-24 18:40:02 - INFO - Tarefa desativada: zonasul: azeite-extra-virgem
+2026-01-24 18:40:02 - INFO - Agendada (fila): amazon: Samsung Galaxy S24U (18:39)
+2026-01-24 18:40:02 - INFO - 16:55, 18:39           | zonasul: cafe 3 | 🟢
+2026-01-24 18:40:02 - INFO - 16:58, 17:00           | zonasul: azeite | 🔴
+2026-01-24 18:40:02 - INFO - 18:39                  | amazon: Samsung | 🟢
+2026-01-24 18:40:54 - INFO - Script interrompido pelo usuário.
+2026-01-24 18:41:51 - INFO - Arquivo config.json carregado com sucesso.
+2026-01-24 18:41:51 - INFO - Arquivo sites.json carregado com sucesso (db\sites.json).
+2026-01-24 18:41:51 - INFO - Configuração de email carregada | destinatarios=['geraldo.filho92@hotmail.com', 'geraldo.filho92@gmail.com']
+2026-01-24 18:41:51 - INFO - Worker de execução lenta iniciado.
+2026-01-24 18:41:51 - INFO - 16:55, 18:39           | zonasul: cafe 3 | 🟢
+2026-01-24 18:41:51 - INFO - 16:58, 17:00           | zonasul: azeite | 🔴
+2026-01-24 18:41:51 - INFO - 18:39                  | amazon: Samsung | 🟢
+2026-01-24 18:41:51 - INFO - Agendada (fila): zonasul: cafe 3 coracoes (16:55)
+2026-01-24 18:41:51 - INFO - Agendada (fila): zonasul: cafe 3 coracoes (18:39)
+2026-01-24 18:41:51 - INFO - Tarefa desativada: zonasul: azeite-extra-virgem
+2026-01-24 18:41:51 - INFO - Agendada (fila): amazon: Samsung Galaxy S24U (18:39)
+2026-01-24 18:42:16 - INFO - Recarregando agendamentos após alteração do config.json...
+2026-01-24 18:42:16 - INFO - Arquivo config.json carregado com sucesso.
+2026-01-24 18:42:16 - INFO - Agendada (fila): zonasul: cafe 3 coracoes (16:55)
+2026-01-24 18:42:16 - INFO - Agendada (fila): zonasul: cafe 3 coracoes (18:39)
+2026-01-24 18:42:16 - INFO - Tarefa desativada: zonasul: azeite-extra-virgem
+2026-01-24 18:42:16 - INFO - Agendada (fila): amazon: Samsung Galaxy S24U (18:43)
+2026-01-24 18:42:16 - INFO - 16:55, 18:39           | zonasul: cafe 3 | 🟢
+2026-01-24 18:42:16 - INFO - 16:58, 17:00           | zonasul: azeite | 🔴
+2026-01-24 18:42:16 - INFO - 18:43                  | amazon: Samsung | 🟢
+2026-01-24 18:42:36 - INFO - Recarregando agendamentos após alteração do config.json...
+2026-01-24 18:42:36 - INFO - Arquivo config.json carregado com sucesso.
+2026-01-24 18:42:36 - INFO - Agendada (fila): zonasul: cafe 3 coracoes (16:55)
+2026-01-24 18:42:36 - INFO - Agendada (fila): zonasul: cafe 3 coracoes (18:44)
+2026-01-24 18:42:36 - INFO - Tarefa desativada: zonasul: azeite-extra-virgem
+2026-01-24 18:42:36 - INFO - Agendada (fila): amazon: Samsung Galaxy S24U (18:43)
+2026-01-24 18:42:36 - INFO - 16:55, 18:44           | zonasul: cafe 3 | 🟢
+2026-01-24 18:42:36 - INFO - 16:58, 17:00           | zonasul: azeite | 🔴
+2026-01-24 18:42:36 - INFO - 18:43                  | amazon: Samsung | 🟢
+2026-01-24 18:43:00 - INFO - Enfileirada: amazon: Samsung Galaxy S24U
+2026-01-24 18:44:00 - INFO - Enfileirada: zonasul: cafe 3 coracoes
+2026-01-24 18:45:01 - INFO - Recarregando agendamentos após alteração do config.json...
+2026-01-24 18:45:01 - INFO - Arquivo config.json carregado com sucesso.
+2026-01-24 18:45:01 - INFO - Agendada (fila): zonasul: cafe 3 coracoes (16:55)
+2026-01-24 18:45:01 - INFO - Agendada (fila): zonasul: cafe 3 coracoes (18:44)
+2026-01-24 18:45:01 - INFO - Tarefa desativada: zonasul: azeite-extra-virgem
+2026-01-24 18:45:01 - INFO - Agendada (fila): amazon: Samsung Galaxy S24U (18:43)
+2026-01-24 18:45:01 - INFO - 16:55, 18:44           | zonasul: cafe 3 | 🟢
+2026-01-24 18:45:01 - INFO - 16:58, 17:00           | zonasul: azeite | 🔴
+2026-01-24 18:45:01 - INFO - 18:43                  | amazon: Samsung | 🟢
+2026-01-24 18:47:17 - INFO - Script interrompido pelo usuário.
+2026-01-24 18:47:18 - INFO - Arquivo config.json carregado com sucesso.
+2026-01-24 18:47:18 - INFO - Arquivo sites.json carregado com sucesso (db\sites.json).
+2026-01-24 18:47:18 - INFO - Configuração de email carregada | destinatarios=['geraldo.filho92@hotmail.com', 'geraldo.filho92@gmail.com']
+2026-01-24 18:47:18 - INFO - Worker de execução lenta iniciado.
+2026-01-24 18:47:18 - INFO - 16:55, 18:44           | zonasul: cafe 3 | 🟢
+2026-01-24 18:47:18 - INFO - 16:58, 17:00           | zonasul: azeite | 🔴
+2026-01-24 18:47:18 - INFO - 18:43                  | amazon: Samsung | 🟢
+2026-01-24 18:47:18 - INFO - Agendada (fila): zonasul: cafe 3 coracoes (16:55)
+2026-01-24 18:47:18 - INFO - Agendada (fila): zonasul: cafe 3 coracoes (18:44)
+2026-01-24 18:47:18 - INFO - Tarefa desativada: zonasul: azeite-extra-virgem
+2026-01-24 18:47:18 - INFO - Agendada (fila): amazon: Samsung Galaxy S24U (18:43)
+2026-01-24 18:47:28 - INFO - Recarregando agendamentos após alteração do config.json...
+2026-01-24 18:47:28 - INFO - Arquivo config.json carregado com sucesso.
+2026-01-24 18:47:28 - INFO - Agendada (fila): zonasul: cafe 3 coracoes (16:55)
+2026-01-24 18:47:28 - INFO - Agendada (fila): zonasul: cafe 3 coracoes (18:44)
+2026-01-24 18:47:28 - INFO - Tarefa desativada: zonasul: azeite-extra-virgem
+2026-01-24 18:47:28 - INFO - Agendada (fila): amazon: Samsung Galaxy S24U (18:48)
+2026-01-24 18:47:28 - INFO - 16:55, 18:44           | zonasul: cafe 3 | 🟢
+2026-01-24 18:47:28 - INFO - 16:58, 17:00           | zonasul: azeite | 🔴
+2026-01-24 18:47:28 - INFO - 18:48                  | amazon: Samsung | 🟢
+2026-01-24 18:47:43 - INFO - Recarregando agendamentos após alteração do config.json...
+2026-01-24 18:47:43 - INFO - Arquivo config.json carregado com sucesso.
+2026-01-24 18:47:43 - INFO - Agendada (fila): zonasul: cafe 3 coracoes (16:55)
+2026-01-24 18:47:43 - INFO - Agendada (fila): zonasul: cafe 3 coracoes (18:48)
+2026-01-24 18:47:43 - INFO - Tarefa desativada: zonasul: azeite-extra-virgem
+2026-01-24 18:47:43 - INFO - Agendada (fila): amazon: Samsung Galaxy S24U (18:48)
+2026-01-24 18:47:43 - INFO - 16:55, 18:48           | zonasul: cafe 3 | 🟢
+2026-01-24 18:47:43 - INFO - 16:58, 17:00           | zonasul: azeite | 🔴
+2026-01-24 18:47:43 - INFO - 18:48                  | amazon: Samsung | 🟢
+2026-01-24 18:48:00 - INFO - Enfileirada: zonasul: cafe 3 coracoes
+2026-01-24 18:48:00 - INFO - Enfileirada: amazon: Samsung Galaxy S24U
+2026-01-24 18:49:03 - INFO - Recarregando agendamentos após alteração do config.json...
+2026-01-24 18:49:03 - INFO - Arquivo config.json carregado com sucesso.
+2026-01-24 18:49:03 - INFO - Agendada (fila): zonasul: cafe 3 coracoes (16:55)
+2026-01-24 18:49:03 - INFO - Agendada (fila): zonasul: cafe 3 coracoes (18:48)
+2026-01-24 18:49:03 - INFO - Tarefa desativada: zonasul: azeite-extra-virgem
+2026-01-24 18:49:03 - INFO - Agendada (fila): amazon: Samsung Galaxy S24U (18:48)
+2026-01-24 18:49:03 - INFO - 16:55, 18:48           | zonasul: cafe 3 | 🟢
+2026-01-24 18:49:03 - INFO - 16:58, 17:00           | zonasul: azeite | 🔴
+2026-01-24 18:49:03 - INFO - 18:48                  | amazon: Samsung | 🟢
+2026-01-24 18:52:38 - INFO - Script interrompido pelo usuário.
+2026-01-24 18:52:39 - INFO - Arquivo config.json carregado com sucesso.
+2026-01-24 18:52:39 - INFO - Arquivo sites.json carregado com sucesso (db\sites.json).
+2026-01-24 18:52:39 - INFO - Configuração de email carregada | destinatarios=['geraldo.filho92@hotmail.com', 'geraldo.filho92@gmail.com']
+2026-01-24 18:52:39 - INFO - Worker de execução lenta iniciado.
+2026-01-24 18:52:39 - INFO - 16:55, 18:48           | zonasul: cafe 3 | 🟢
+2026-01-24 18:52:39 - INFO - 16:58, 17:00           | zonasul: azeite | 🔴
+2026-01-24 18:52:39 - INFO - 18:48                  | amazon: Samsung | 🟢
+2026-01-24 18:52:39 - INFO - Agendada (fila): zonasul: cafe 3 coracoes (16:55)
+2026-01-24 18:52:39 - INFO - Agendada (fila): zonasul: cafe 3 coracoes (18:48)
+2026-01-24 18:52:39 - INFO - Tarefa desativada: zonasul: azeite-extra-virgem
+2026-01-24 18:52:39 - INFO - Agendada (fila): amazon: Samsung Galaxy S24U (18:48)
+2026-01-24 18:52:49 - INFO - Recarregando agendamentos após alteração do config.json...
+2026-01-24 18:52:49 - INFO - Arquivo config.json carregado com sucesso.
+2026-01-24 18:52:49 - INFO - Agendada (fila): zonasul: cafe 3 coracoes (16:55)
+2026-01-24 18:52:49 - INFO - Agendada (fila): zonasul: cafe 3 coracoes (18:48)
+2026-01-24 18:52:49 - INFO - Tarefa desativada: zonasul: azeite-extra-virgem
+2026-01-24 18:52:49 - INFO - Agendada (fila): amazon: Samsung Galaxy S24U (18:48)
+2026-01-24 18:52:49 - INFO - 16:55, 18:48           | zonasul: cafe 3 | 🟢
+2026-01-24 18:52:49 - INFO - 16:58, 17:00           | zonasul: azeite | 🔴
+2026-01-24 18:52:49 - INFO - 18:48                  | amazon: Samsung | 🟢
+2026-01-24 18:52:54 - INFO - Recarregando agendamentos após alteração do config.json...
+2026-01-24 18:52:54 - INFO - Arquivo config.json carregado com sucesso.
+2026-01-24 18:52:54 - INFO - Agendada (fila): zonasul: cafe 3 coracoes (16:55)
+2026-01-24 18:52:54 - INFO - Agendada (fila): zonasul: cafe 3 coracoes (18:53)
+2026-01-24 18:52:54 - INFO - Tarefa desativada: zonasul: azeite-extra-virgem
+2026-01-24 18:52:54 - INFO - Agendada (fila): amazon: Samsung Galaxy S24U (18:48)
+2026-01-24 18:52:54 - INFO - 16:55, 18:53           | zonasul: cafe 3 | 🟢
+2026-01-24 18:52:54 - INFO - 16:58, 17:00           | zonasul: azeite | 🔴
+2026-01-24 18:52:54 - INFO - 18:48                  | amazon: Samsung | 🟢
+2026-01-24 18:53:00 - INFO - Enfileirada: zonasul: cafe 3 coracoes
+2026-01-24 18:53:34 - INFO - Recarregando agendamentos após alteração do config.json...
+2026-01-24 18:53:34 - INFO - Arquivo config.json carregado com sucesso.
+2026-01-24 18:53:34 - INFO - Agendada (fila): zonasul: cafe 3 coracoes (16:55)
+2026-01-24 18:53:34 - INFO - Agendada (fila): zonasul: cafe 3 coracoes (18:53)
+2026-01-24 18:53:34 - INFO - Tarefa desativada: zonasul: azeite-extra-virgem
+2026-01-24 18:53:34 - INFO - Agendada (fila): amazon: Samsung Galaxy S24U (18:48)
+2026-01-24 18:53:34 - INFO - 16:55, 18:53           | zonasul: cafe 3 | 🟢
+2026-01-24 18:53:34 - INFO - 16:58, 17:00           | zonasul: azeite | 🔴
+2026-01-24 18:53:34 - INFO - 18:48                  | amazon: Samsung | 🟢
+2026-01-24 18:54:54 - INFO - Recarregando agendamentos após alteração do config.json...
+2026-01-24 18:54:54 - INFO - Arquivo config.json carregado com sucesso.
+2026-01-24 18:54:54 - INFO - Agendada (fila): zonasul: cafe 3 coracoes (16:55)
+2026-01-24 18:54:54 - INFO - Agendada (fila): zonasul: cafe 3 coracoes (18:53)
+2026-01-24 18:54:54 - INFO - Tarefa desativada: zonasul: azeite-extra-virgem
+2026-01-24 18:54:54 - INFO - Agendada (fila): amazon: Samsung Galaxy S24U (18:55)
+2026-01-24 18:54:54 - INFO - 16:55, 18:53           | zonasul: cafe 3 | 🟢
+2026-01-24 18:54:54 - INFO - 16:58, 17:00           | zonasul: azeite | 🔴
+2026-01-24 18:54:54 - INFO - 18:55                  | amazon: Samsung | 🟢
+2026-01-24 18:55:00 - INFO - Enfileirada: amazon: Samsung Galaxy S24U
+2026-01-24 18:55:34 - INFO - Recarregando agendamentos após alteração do config.json...
+2026-01-24 18:55:34 - INFO - Arquivo config.json carregado com sucesso.
+2026-01-24 18:55:34 - INFO - Agendada (fila): zonasul: cafe 3 coracoes (16:55)
+2026-01-24 18:55:34 - INFO - Agendada (fila): zonasul: cafe 3 coracoes (18:53)
+2026-01-24 18:55:34 - INFO - Tarefa desativada: zonasul: azeite-extra-virgem
+2026-01-24 18:55:34 - INFO - Agendada (fila): amazon: Samsung Galaxy S24U (18:55)
+2026-01-24 18:55:34 - INFO - 16:55, 18:53           | zonasul: cafe 3 | 🟢
+2026-01-24 18:55:34 - INFO - 16:58, 17:00           | zonasul: azeite | 🔴
+2026-01-24 18:55:34 - INFO - 18:55                  | amazon: Samsung | 🟢
+2026-01-24 18:57:14 - INFO - Recarregando agendamentos após alteração do config.json...
+2026-01-24 18:57:14 - INFO - Arquivo config.json carregado com sucesso.
+2026-01-24 18:57:14 - INFO - Agendada (fila): zonasul: cafe 3 coracoes (16:55)
+2026-01-24 18:57:14 - INFO - Agendada (fila): zonasul: cafe 3 coracoes (18:53)
+2026-01-24 18:57:14 - INFO - Tarefa desativada: zonasul: azeite-extra-virgem
+2026-01-24 18:57:14 - INFO - Agendada (fila): amazon: Samsung Galaxy S24U (18:55)
+2026-01-24 18:57:14 - INFO - Agendada (fila): amazon: Apple-iPhone-Pro-Max-256 (18:58)
+2026-01-24 18:57:14 - INFO - 16:55, 18:53           | zonasul: cafe 3 | 🟢
+2026-01-24 18:57:14 - INFO - 16:58, 17:00           | zonasul: azeite | 🔴
+2026-01-24 18:57:14 - INFO - 18:55                  | amazon: Samsung | 🟢
+2026-01-24 18:57:14 - INFO - 18:58                  | amazon: Apple-i | 🟢
+2026-01-24 18:57:34 - INFO - Recarregando agendamentos após alteração do config.json...
+2026-01-24 18:57:34 - INFO - Arquivo config.json carregado com sucesso.
+2026-01-24 18:57:34 - INFO - Agendada (fila): zonasul: cafe 3 coracoes (16:55)
+2026-01-24 18:57:34 - INFO - Agendada (fila): zonasul: cafe 3 coracoes (18:53)
+2026-01-24 18:57:34 - INFO - Tarefa desativada: zonasul: azeite-extra-virgem
+2026-01-24 18:57:34 - INFO - Agendada (fila): amazon: Samsung Galaxy S24U (18:55)
+2026-01-24 18:57:34 - INFO - Agendada (fila): amazon: Apple-iPhone-Pro-Max-256 (18:58)
+2026-01-24 18:57:34 - INFO - 16:55, 18:53           | zonasul: cafe 3 | 🟢
+2026-01-24 18:57:34 - INFO - 16:58, 17:00           | zonasul: azeite | 🔴
+2026-01-24 18:57:34 - INFO - 18:55                  | amazon: Samsung | 🟢
+2026-01-24 18:57:34 - INFO - 18:58                  | amazon: Apple-i | 🟢
+2026-01-24 18:57:40 - INFO - Script interrompido pelo usuário.
+2026-01-24 18:57:41 - INFO - Arquivo config.json carregado com sucesso.
+2026-01-24 18:57:41 - INFO - Arquivo sites.json carregado com sucesso (db\sites.json).
+2026-01-24 18:57:41 - INFO - Configuração de email carregada | destinatarios=['geraldo.filho92@hotmail.com', 'geraldo.filho92@gmail.com']
+2026-01-24 18:57:41 - INFO - Worker de execução lenta iniciado.
+2026-01-24 18:57:41 - INFO - 16:55, 18:53           | zonasul: cafe 3 | 🟢
+2026-01-24 18:57:41 - INFO - 16:58, 17:00           | zonasul: azeite | 🔴
+2026-01-24 18:57:41 - INFO - 18:55                  | amazon: Samsung | 🟢
+2026-01-24 18:57:41 - INFO - 18:58                  | amazon: Apple-i | 🟢
+2026-01-24 18:57:41 - INFO - Agendada (fila): zonasul: cafe 3 coracoes (16:55)
+2026-01-24 18:57:41 - INFO - Agendada (fila): zonasul: cafe 3 coracoes (18:53)
+2026-01-24 18:57:41 - INFO - Tarefa desativada: zonasul: azeite-extra-virgem
+2026-01-24 18:57:41 - INFO - Agendada (fila): amazon: Samsung Galaxy S24U (18:55)
+2026-01-24 18:57:41 - INFO - Agendada (fila): amazon: Apple-iPhone-Pro-Max-256 (18:58)
+2026-01-24 18:58:00 - INFO - Enfileirada: amazon: Apple-iPhone-Pro-Max-256
+2026-01-24 18:58:31 - INFO - Recarregando agendamentos após alteração do config.json...
+2026-01-24 18:58:31 - INFO - Arquivo config.json carregado com sucesso.
+2026-01-24 18:58:31 - INFO - Agendada (fila): zonasul: cafe 3 coracoes (16:55)
+2026-01-24 18:58:31 - INFO - Agendada (fila): zonasul: cafe 3 coracoes (18:53)
+2026-01-24 18:58:31 - INFO - Tarefa desativada: zonasul: azeite-extra-virgem
+2026-01-24 18:58:31 - INFO - Agendada (fila): amazon: Samsung Galaxy S24U (18:55)
+2026-01-24 18:58:31 - INFO - Agendada (fila): amazon: Apple-iPhone-Pro-Max-256 (18:58)
+2026-01-24 18:58:31 - INFO - 16:55, 18:53           | zonasul: cafe 3 | 🟢
+2026-01-24 18:58:31 - INFO - 16:58, 17:00           | zonasul: azeite | 🔴
+2026-01-24 18:58:31 - INFO - 18:55                  | amazon: Samsung | 🟢
+2026-01-24 18:58:31 - INFO - 18:58                  | amazon: Apple-i | 🟢
+2026-01-24 19:08:23 - INFO - Script interrompido pelo usuário.

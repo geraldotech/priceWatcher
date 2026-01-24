@@ -1,0 +1,13 @@
+{
+  "project": "PriceWatcher",
+  "python": ">=3.10",
+  "dependencies": {
+    "requests": ">=2.31",
+    "beautifulsoup4": ">=4.12",
+    "schedule": "*"
+  },
+  "services": {
+    "email": true,
+    "alerts": true
+  }
+}

@@ -1,16 +1,55 @@
 {
     "tasks": [
         {
-            "description": "test timeout",
-            "url": "https://geraldox.netlify.app/src/db/status.json",
+            "description": "zonasul: cafe 3 coracoes",
+            "url": "https://www.zonasul.com.br/capsulas-de-cafe-espresso-atento-3-coracoes-com-10-unidades-938521/p",
             "times": [
-                "22:24",
-                "22:25",
-                "22:30"
+                "16:55",
+                "18:53"
             ],
             "status": true,
             "id": "7bd563",
-            "lastRun": "2026-01-22T22:30:00.715958"
+            "targetPrice": 15.98,
+            "lastValue": "R$ 15,98",
+            "alertSent": false,
+            "lastRun": "2026-01-24T18:53:29"
+        },
+        {
+            "description": "zonasul: azeite-extra-virgem",
+            "url": "https://www.zonasul.com.br/azeite-extra-virgem-tunisiano-organico-rahma-500ml-5470307/p",
+            "times": [
+                "16:58",
+                "17:00"
+            ],
+            "status": false,
+            "targetPrice": 30.0,
+            "id": "7bd553",
+            "lastValue": "R$ 29,98",
+            "lastRun": "2026-01-24T16:52:01"
+        },
+        {
+            "description": "amazon: Samsung Galaxy S24U",
+            "url": "https://www.amazon.com.br/Smartphone-Samsung-Galaxy-Selfie-1-120Hz/dp/B0CQD9VK7X?th=1",
+            "times": [
+                "18:55"
+            ],
+            "status": true,
+            "id": "7bhh53",
+            "sendNow": false,
+            "lastValue": "6.020 ,",
+            "lastRun": "2026-01-24T18:55:30"
+        },
+        {
+            "description": "amazon: Apple-iPhone-Pro-Max-256",
+            "url": "https://www.amazon.com.br/Apple-iPhone-Pro-Max-256/dp/B0FQJ2KJ9X?th=1",
+            "times": [
+                "18:58"
+            ],
+            "sendNow": true,
+            "status": true,
+            "id": "7b336553",
+            "lastValue": "12.498 ,",
+            "lastRun": "2026-01-24T18:58:29"
         }
     ]
 }
