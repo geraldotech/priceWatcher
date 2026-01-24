@@ -148,16 +148,11 @@ def fmt_brl_decimal(d: Decimal | None) -> str:
 
 
 
-def enviar_email(
-    assunto: str,
-    corpo: str,
-    destinatarios: list[str] | None = None
-) -> bool:
+def enviar_email(assunto: str, corpo_html: str, corpo_texto: str | None = None, destinatarios: list[str] | None = None) -> bool:
     if not email_config:
         error_logger.error("Config de email não carregada.")
         return False
 
-    # usa os do ini se não passar manualmente
     if not destinatarios:
         destinatarios = email_config.get("destinatarios", [])
 
@@ -170,32 +165,110 @@ def enviar_email(
         msg["From"] = email_config["remetente"]
         msg["To"] = ", ".join(destinatarios)
         msg["Subject"] = assunto
-        msg.set_content(corpo)
+
+        # fallback texto (bom para entregabilidade)
+        if not corpo_texto:
+            corpo_texto = re.sub(r"<[^>]+>", "", corpo_html)  # remove tags simples
+
+        msg.set_content(corpo_texto)
+        msg.add_alternative(corpo_html, subtype="html")
 
         context = ssl.create_default_context()
 
-        with smtplib.SMTP_SSL(
-            email_config["smtp"],
-            email_config["porta"],
-            context=context
-        ) as server:
-
+        with smtplib.SMTP_SSL(email_config["smtp"], email_config["porta"], context=context) as server:
             if email_config["auth"]:
-                server.login(
-                    email_config["email"],
-                    email_config["senha"]
-                )
-
+                server.login(email_config["email"], email_config["senha"])
             server.send_message(msg)
 
-        success_logger.info(
-            f"E-mail enviado | para={destinatarios} | assunto='{assunto}'"
-        )
+        success_logger.info(f"E-mail enviado | para={destinatarios} | assunto='{assunto}'")
         return True
 
     except Exception as e:
         error_logger.error(f"Erro ao enviar email: {e}")
         return False
+
+def montar_email_html(
+    titulo: str,
+    produto: str,
+    url: str,
+    preco_atual: str,
+    preco_alvo: str = "—",
+    site: str = "",
+    quando: str = ""
+) -> str:
+    quando = quando or datetime.now().strftime("%d/%m/%Y %H:%M:%S")
+
+    # CSS inline (melhor suporte em email)
+    return f"""
+<!doctype html>
+<html>
+  <body style="margin:0;padding:0;background:#f6f7fb;font-family:Arial,Helvetica,sans-serif;">
+    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#f6f7fb;padding:24px 0;">
+      <tr>
+        <td align="center">
+          <table role="presentation" width="600" cellpadding="0" cellspacing="0" style="background:#ffffff;border-radius:14px;overflow:hidden;box-shadow:0 6px 22px rgba(0,0,0,.08);">
+            <!-- Header -->
+            <tr>
+              <td style="padding:18px 22px;background:#111827;color:#ffffff;">
+                <div style="font-size:14px;opacity:.9;">PriceWatcher</div>
+                <div style="font-size:20px;font-weight:700;line-height:1.2;margin-top:4px;">{titulo}</div>
+              </td>
+            </tr>
+
+            <!-- Body -->
+            <tr>
+              <td style="padding:22px;">
+                <div style="font-size:16px;font-weight:700;color:#111827;margin-bottom:8px;">{produto}</div>
+
+                <div style="font-size:13px;color:#6b7280;margin-bottom:14px;">
+                  {site} • {quando}
+                </div>
+
+                <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="border:1px solid #e5e7eb;border-radius:12px;">
+                  <tr>
+                    <td style="padding:14px 16px;border-bottom:1px solid #e5e7eb;">
+                      <div style="font-size:12px;color:#6b7280;">Preço atual</div>
+                      <div style="font-size:22px;font-weight:800;color:#111827;margin-top:2px;">{preco_atual}</div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td style="padding:14px 16px;">
+                      <div style="font-size:12px;color:#6b7280;">Preço alvo</div>
+                      <div style="font-size:16px;font-weight:700;color:#111827;margin-top:2px;">{preco_alvo}</div>
+                    </td>
+                  </tr>
+                </table>
+
+                <div style="margin-top:16px;font-size:13px;color:#6b7280;line-height:1.5;">
+                  Abrir o produto:
+                </div>
+
+                <div style="margin-top:10px;">
+                  <a href="{url}" style="display:inline-block;background:#2563eb;color:#ffffff;text-decoration:none;padding:12px 16px;border-radius:10px;font-weight:700;font-size:14px;">
+                    Ver produto
+                  </a>
+                </div>
+
+                <div style="margin-top:18px;font-size:12px;color:#9ca3af;line-height:1.5;">
+                  Dica: você pode configurar <b>targetPrice</b> e o controle anti-spam (<b>alertSent</b>) no <code>db/config.json</code>.
+                </div>
+              </td>
+            </tr>
+
+            <!-- Footer -->
+            <tr>
+              <td style="padding:14px 22px;background:#f3f4f6;color:#6b7280;font-size:12px;">
+                Enviado automaticamente pelo PriceWatcher.
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>
+""".strip()
+
 
 
 def carregar_sites():
@@ -413,22 +486,37 @@ def executar_tarefa_se_ativa(task):
             target_decimal = parse_target(task.get("targetPrice"))  # JSON (num)
 
             # corpo sempre seguro (não quebra com None)
-            corpo = (
-                f"Produto: {task.get('description')}\n"
-                f"URL: {task.get('url')}\n\n"
-                f"Preço atual: {fmt_brl_decimal(preco_atual)}\n"
-                f"Preço alvo: {fmt_brl_decimal(target_decimal)}\n\n"
+            html = montar_email_html(
+                    titulo="🔥 Alerta de preço",
+                    produto=desc,
+                    url=task.get("url"),
+                    preco_atual=valor,
+                    preco_alvo=fmt_brl_decimal(target_decimal),
+                    site=extrair_dominio(task.get("url")),
+                )
+
+            texto = (
+                f"{desc}\n"
+                f"{task.get('url')}\n\n"
+                f"Preço atual: {valor}\n"
+                f"Preço alvo: {fmt_brl_decimal(target_decimal)}\n"
                 f"Data/Hora: {datetime.now().strftime('%d/%m/%Y %H:%M:%S')}\n"
             )
 
+            enviar_email(
+                assunto=f"🔥 Alerta de preço: {desc}",
+                corpo_html=html,
+                corpo_texto=texto
+            )
             # ---------- SEND NOW (manual) ----------
             # ✅ default False, senão vira spam
             # so envia email se só envia se explicitamente true  "sendNow": true,
             if task.get("sendNow", False):
                 enviar_email(
-                    assunto=f"📩 Envio manual: {desc}",
-                    corpo=corpo
-                )
+                        assunto=f"🔥 Alerta de preço: {desc}",
+                        corpo_html=html,
+                        corpo_texto=texto
+                    )
                #se quiser que o sendnow seja desatibilitado, envia email apenas 1x
                # task["sendNow"] = False  # auto-resetSendNow ? 
                 success_logger.info(f"SENDNOW | {desc} | email enviado")
@@ -441,7 +529,8 @@ def executar_tarefa_se_ativa(task):
                         if task.get("alertSent", True):
                             enviar_email(
                                 assunto=f"🔥 Alerta de preço: {desc}",
-                                corpo=corpo
+                                corpo_html=html,
+                                corpo_texto=texto
                             )
                             task["alertSent"] = False  # desarma após enviar
                             success_logger.info(f"ALERTA | {desc} | atual={preco_atual} <= target={target_decimal}")

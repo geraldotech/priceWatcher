@@ -743,3 +743,88 @@
 2026-01-24 19:24:16 - INFO - 18:55                  | amazon: Samsung | 🟢
 2026-01-24 19:24:16 - INFO - 18:58                  | amazon: Apple-i | 🟢
 2026-01-24 19:27:42 - INFO - Script interrompido pelo usuário.
+2026-01-24 19:27:47 - INFO - Arquivo config.json carregado com sucesso.
+2026-01-24 19:27:47 - INFO - Arquivo sites.json carregado com sucesso (db\sites.json).
+2026-01-24 19:27:47 - INFO - Configuração de email carregada | destinatarios=['geraldo.filho92@hotmail.com', 'geraldo.filho92@gmail.com']
+2026-01-24 19:27:47 - INFO - Worker de execução lenta iniciado.
+2026-01-24 19:27:47 - INFO - 16:55, 19:24           | zonasul: cafe 3 | 🟢
+2026-01-24 19:27:47 - INFO - 16:58, 17:00           | zonasul: azeite | 🔴
+2026-01-24 19:27:47 - INFO - 18:55                  | amazon: Samsung | 🟢
+2026-01-24 19:27:47 - INFO - 18:58                  | amazon: Apple-i | 🟢
+2026-01-24 19:27:47 - INFO - Agendada (fila): zonasul: cafe 3 coracoes (16:55)
+2026-01-24 19:27:47 - INFO - Agendada (fila): zonasul: cafe 3 coracoes (19:24)
+2026-01-24 19:27:47 - INFO - Tarefa desativada: zonasul: azeite-extra-virgem
+2026-01-24 19:27:47 - INFO - Agendada (fila): amazon: Samsung Galaxy S24U (18:55)
+2026-01-24 19:27:47 - INFO - Agendada (fila): amazon: Apple-iPhone-Pro-Max-256 (18:58)
+2026-01-24 19:27:52 - INFO - Recarregando agendamentos após alteração do config.json...
+2026-01-24 19:27:52 - INFO - Arquivo config.json carregado com sucesso.
+2026-01-24 19:27:52 - INFO - Agendada (fila): zonasul: cafe 3 coracoes (16:55)
+2026-01-24 19:27:52 - INFO - Agendada (fila): zonasul: cafe 3 coracoes (19:24)
+2026-01-24 19:27:52 - INFO - Tarefa desativada: zonasul: azeite-extra-virgem
+2026-01-24 19:27:52 - INFO - Agendada (fila): amazon: Samsung Galaxy S24U (18:55)
+2026-01-24 19:27:52 - INFO - Agendada (fila): amazon: Apple-iPhone-Pro-Max-256 (18:58)
+2026-01-24 19:27:52 - INFO - 16:55, 19:24           | zonasul: cafe 3 | 🟢
+2026-01-24 19:27:52 - INFO - 16:58, 17:00           | zonasul: azeite | 🔴
+2026-01-24 19:27:52 - INFO - 18:55                  | amazon: Samsung | 🟢
+2026-01-24 19:27:52 - INFO - 18:58                  | amazon: Apple-i | 🟢
+2026-01-24 19:27:57 - INFO - Recarregando agendamentos após alteração do config.json...
+2026-01-24 19:27:57 - INFO - Arquivo config.json carregado com sucesso.
+2026-01-24 19:27:57 - INFO - Agendada (fila): zonasul: cafe 3 coracoes (16:55)
+2026-01-24 19:27:57 - INFO - Agendada (fila): zonasul: cafe 3 coracoes (19:28)
+2026-01-24 19:27:57 - INFO - Tarefa desativada: zonasul: azeite-extra-virgem
+2026-01-24 19:27:57 - INFO - Agendada (fila): amazon: Samsung Galaxy S24U (18:55)
+2026-01-24 19:27:57 - INFO - Agendada (fila): amazon: Apple-iPhone-Pro-Max-256 (18:58)
+2026-01-24 19:27:57 - INFO - 16:55, 19:28           | zonasul: cafe 3 | 🟢
+2026-01-24 19:27:57 - INFO - 16:58, 17:00           | zonasul: azeite | 🔴
+2026-01-24 19:27:57 - INFO - 18:55                  | amazon: Samsung | 🟢
+2026-01-24 19:27:57 - INFO - 18:58                  | amazon: Apple-i | 🟢
+2026-01-24 19:28:00 - INFO - Enfileirada: zonasul: cafe 3 coracoes
+2026-01-24 19:28:32 - INFO - Recarregando agendamentos após alteração do config.json...
+2026-01-24 19:28:32 - INFO - Arquivo config.json carregado com sucesso.
+2026-01-24 19:28:32 - INFO - Agendada (fila): zonasul: cafe 3 coracoes (16:55)
+2026-01-24 19:28:32 - INFO - Agendada (fila): zonasul: cafe 3 coracoes (19:28)
+2026-01-24 19:28:32 - INFO - Tarefa desativada: zonasul: azeite-extra-virgem
+2026-01-24 19:28:32 - INFO - Agendada (fila): amazon: Samsung Galaxy S24U (18:55)
+2026-01-24 19:28:32 - INFO - Agendada (fila): amazon: Apple-iPhone-Pro-Max-256 (18:58)
+2026-01-24 19:28:32 - INFO - 16:55, 19:28           | zonasul: cafe 3 | 🟢
+2026-01-24 19:28:32 - INFO - 16:58, 17:00           | zonasul: azeite | 🔴
+2026-01-24 19:28:32 - INFO - 18:55                  | amazon: Samsung | 🟢
+2026-01-24 19:28:32 - INFO - 18:58                  | amazon: Apple-i | 🟢
+2026-01-24 19:32:40 - INFO - Script interrompido pelo usuário.
+2026-01-24 19:35:08 - INFO - Arquivo config.json carregado com sucesso.
+2026-01-24 19:35:08 - INFO - Arquivo sites.json carregado com sucesso (db\sites.json).
+2026-01-24 19:35:08 - INFO - Configuração de email carregada | destinatarios=['geraldo.filho92@hotmail.com', 'geraldo.filho92@gmail.com']
+2026-01-24 19:35:08 - INFO - Worker de execução lenta iniciado.
+2026-01-24 19:35:08 - INFO - 16:55, 19:28           | zonasul: cafe 3 | 🟢
+2026-01-24 19:35:08 - INFO - 16:58, 17:00           | zonasul: azeite | 🔴
+2026-01-24 19:35:08 - INFO - 18:55                  | amazon: Samsung | 🟢
+2026-01-24 19:35:08 - INFO - 18:58                  | amazon: Apple-i | 🟢
+2026-01-24 19:35:08 - INFO - Agendada (fila): zonasul: cafe 3 coracoes (16:55)
+2026-01-24 19:35:08 - INFO - Agendada (fila): zonasul: cafe 3 coracoes (19:28)
+2026-01-24 19:35:08 - INFO - Tarefa desativada: zonasul: azeite-extra-virgem
+2026-01-24 19:35:08 - INFO - Agendada (fila): amazon: Samsung Galaxy S24U (18:55)
+2026-01-24 19:35:08 - INFO - Agendada (fila): amazon: Apple-iPhone-Pro-Max-256 (18:58)
+2026-01-24 19:35:18 - INFO - Recarregando agendamentos após alteração do config.json...
+2026-01-24 19:35:18 - INFO - Arquivo config.json carregado com sucesso.
+2026-01-24 19:35:18 - INFO - Agendada (fila): zonasul: cafe 3 coracoes (16:55)
+2026-01-24 19:35:18 - INFO - Agendada (fila): zonasul: cafe 3 coracoes (19:36)
+2026-01-24 19:35:18 - INFO - Tarefa desativada: zonasul: azeite-extra-virgem
+2026-01-24 19:35:18 - INFO - Agendada (fila): amazon: Samsung Galaxy S24U (18:55)
+2026-01-24 19:35:18 - INFO - Agendada (fila): amazon: Apple-iPhone-Pro-Max-256 (18:58)
+2026-01-24 19:35:18 - INFO - 16:55, 19:36           | zonasul: cafe 3 | 🟢
+2026-01-24 19:35:18 - INFO - 16:58, 17:00           | zonasul: azeite | 🔴
+2026-01-24 19:35:18 - INFO - 18:55                  | amazon: Samsung | 🟢
+2026-01-24 19:35:18 - INFO - 18:58                  | amazon: Apple-i | 🟢
+2026-01-24 19:36:00 - INFO - Enfileirada: zonasul: cafe 3 coracoes
+2026-01-24 19:36:58 - INFO - Recarregando agendamentos após alteração do config.json...
+2026-01-24 19:36:58 - INFO - Arquivo config.json carregado com sucesso.
+2026-01-24 19:36:58 - INFO - Agendada (fila): zonasul: cafe 3 coracoes (16:55)
+2026-01-24 19:36:58 - INFO - Agendada (fila): zonasul: cafe 3 coracoes (19:36)
+2026-01-24 19:36:58 - INFO - Tarefa desativada: zonasul: azeite-extra-virgem
+2026-01-24 19:36:58 - INFO - Agendada (fila): amazon: Samsung Galaxy S24U (18:55)
+2026-01-24 19:36:58 - INFO - Agendada (fila): amazon: Apple-iPhone-Pro-Max-256 (18:58)
+2026-01-24 19:36:58 - INFO - 16:55, 19:36           | zonasul: cafe 3 | 🟢
+2026-01-24 19:36:58 - INFO - 16:58, 17:00           | zonasul: azeite | 🔴
+2026-01-24 19:36:58 - INFO - 18:55                  | amazon: Samsung | 🟢
+2026-01-24 19:36:58 - INFO - 18:58                  | amazon: Apple-i | 🟢
+2026-01-24 19:38:10 - INFO - Script interrompido pelo usuário.

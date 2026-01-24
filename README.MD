@@ -4,6 +4,8 @@ Serviço em Python para monitorar preços em páginas web, registrar logs e envi
 
 ---
 
+![alt text](image.png)
+
 ## 🚀 Funcionalidades
 
 - Monitoramento periódico de preços via scraping

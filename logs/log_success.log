@@ -5,3 +5,7 @@
 2026-01-24 19:28:01 - INFO - zonasul: cafe 3 coracoes | www.zonasul.com.br/capsulas-de-cafe-espresso-atento-3-coracoes-com-10-unidades-938521/p | selector=.vtex-difference__por | value=R$ 15,98 | tempo de busca=0.27s
 2026-01-24 19:28:29 - INFO - E-mail enviado | para=['geraldo.filho92@hotmail.com', 'geraldo.filho92@gmail.com'] | assunto='🔥 Alerta de preço: zonasul: cafe 3 coracoes'
 2026-01-24 19:28:29 - INFO - ALERTA | zonasul: cafe 3 coracoes | atual=15.98 <= target=15.98
+2026-01-24 19:36:01 - INFO - zonasul: cafe 3 coracoes | www.zonasul.com.br/capsulas-de-cafe-espresso-atento-3-coracoes-com-10-unidades-938521/p | selector=.vtex-difference__por | value=R$ 15,98 | tempo de busca=0.33s
+2026-01-24 19:36:31 - INFO - E-mail enviado | para=['geraldo.filho92@hotmail.com', 'geraldo.filho92@gmail.com'] | assunto='🔥 Alerta de preço: zonasul: cafe 3 coracoes'
+2026-01-24 19:36:58 - INFO - E-mail enviado | para=['geraldo.filho92@hotmail.com', 'geraldo.filho92@gmail.com'] | assunto='🔥 Alerta de preço: zonasul: cafe 3 coracoes'
+2026-01-24 19:36:58 - INFO - ALERTA | zonasul: cafe 3 coracoes | atual=15.98 <= target=15.98
