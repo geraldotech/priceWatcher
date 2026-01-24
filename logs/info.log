@@ -1,0 +1,84 @@
+2026-01-22 22:18:18 - INFO - Arquivo config.json carregado com sucesso.
+2026-01-22 22:18:18 - INFO - Healthcheck rodando em 0.0.0.0:5051
+2026-01-22 22:18:18 - INFO - 09:54, 13:10, 18:30    | test timeout    | 🟢
+2026-01-22 22:18:18 - INFO - Agendada (fila): test timeout (09:54)
+2026-01-22 22:18:18 - INFO - Agendada (fila): test timeout (13:10)
+2026-01-22 22:18:18 - INFO - Agendada (fila): test timeout (18:30)
+2026-01-22 22:19:43 - INFO - Recarregando agendamentos após alteração do config.json...
+2026-01-22 22:19:43 - INFO - Arquivo config.json carregado com sucesso.
+2026-01-22 22:19:43 - INFO - Agendada (fila): test timeout (09:54)
+2026-01-22 22:19:43 - INFO - Agendada (fila): test timeout (13:10)
+2026-01-22 22:19:43 - INFO - Agendada (fila): test timeout (18:30)
+2026-01-22 22:19:43 - INFO - 09:54, 13:10, 18:30    | test timeout    | 🟢
+2026-01-22 22:20:03 - INFO - Recarregando agendamentos após alteração do config.json...
+2026-01-22 22:20:03 - INFO - Arquivo config.json carregado com sucesso.
+2026-01-22 22:20:03 - INFO - Agendada (fila): test timeout (22:20)
+2026-01-22 22:20:03 - INFO - Agendada (fila): test timeout (13:10)
+2026-01-22 22:20:03 - INFO - Agendada (fila): test timeout (18:30)
+2026-01-22 22:20:03 - INFO - 22:20, 13:10, 18:30    | test timeout    | 🟢
+2026-01-22 22:20:57 - INFO - Script interrompido pelo usuário.
+2026-01-22 22:20:59 - INFO - Arquivo config.json carregado com sucesso.
+2026-01-22 22:20:59 - INFO - Healthcheck rodando em 0.0.0.0:5051
+2026-01-22 22:20:59 - INFO - 22:20, 13:10, 18:30    | test timeout    | 🟢
+2026-01-22 22:20:59 - INFO - Agendada (fila): test timeout (22:20)
+2026-01-22 22:20:59 - INFO - Agendada (fila): test timeout (13:10)
+2026-01-22 22:20:59 - INFO - Agendada (fila): test timeout (18:30)
+2026-01-22 22:21:02 - INFO - Script interrompido pelo usuário.
+2026-01-22 22:21:09 - INFO - Arquivo config.json carregado com sucesso.
+2026-01-22 22:21:09 - INFO - Healthcheck rodando em 0.0.0.0:5051
+2026-01-22 22:21:09 - INFO - 22:22, 13:10, 18:30    | test timeout    | 🟢
+2026-01-22 22:21:09 - INFO - Agendada (fila): test timeout (22:22)
+2026-01-22 22:21:09 - INFO - Agendada (fila): test timeout (13:10)
+2026-01-22 22:21:09 - INFO - Agendada (fila): test timeout (18:30)
+2026-01-22 22:22:00 - INFO - Enfileirada: test timeout
+2026-01-22 22:23:32 - INFO - Script interrompido pelo usuário.
+2026-01-22 22:23:39 - INFO - Worker de execução lenta iniciado.
+2026-01-22 22:23:39 - INFO - Arquivo config.json carregado com sucesso.
+2026-01-22 22:23:39 - INFO - Healthcheck rodando em 0.0.0.0:5051
+2026-01-22 22:23:39 - INFO - Worker de execução lenta iniciado.
+2026-01-22 22:23:39 - INFO - 22:24, 13:10, 18:30    | test timeout    | 🟢
+2026-01-22 22:23:39 - INFO - Agendada (fila): test timeout (22:24)
+2026-01-22 22:23:39 - INFO - Agendada (fila): test timeout (13:10)
+2026-01-22 22:23:39 - INFO - Agendada (fila): test timeout (18:30)
+2026-01-22 22:24:00 - INFO - Enfileirada: test timeout
+2026-01-22 22:24:01 - INFO - Sucesso na chamada de: api-restful-json.vercel.app/posts
+2026-01-22 22:24:04 - INFO - Recarregando agendamentos após alteração do config.json...
+2026-01-22 22:24:04 - INFO - Arquivo config.json carregado com sucesso.
+2026-01-22 22:24:04 - INFO - Agendada (fila): test timeout (22:24)
+2026-01-22 22:24:04 - INFO - Agendada (fila): test timeout (13:10)
+2026-01-22 22:24:04 - INFO - Agendada (fila): test timeout (18:30)
+2026-01-22 22:24:04 - INFO - 22:24, 13:10, 18:30    | test timeout    | 🟢
+2026-01-22 22:24:39 - INFO - Recarregando agendamentos após alteração do config.json...
+2026-01-22 22:24:39 - INFO - Arquivo config.json carregado com sucesso.
+2026-01-22 22:24:39 - INFO - Agendada (fila): test timeout (22:24)
+2026-01-22 22:24:39 - INFO - Agendada (fila): test timeout (13:10)
+2026-01-22 22:24:39 - INFO - Agendada (fila): test timeout (18:30)
+2026-01-22 22:24:39 - INFO - 22:24, 13:10, 18:30    | test timeout    | 🟢
+2026-01-22 22:24:44 - INFO - Recarregando agendamentos após alteração do config.json...
+2026-01-22 22:24:44 - INFO - Arquivo config.json carregado com sucesso.
+2026-01-22 22:24:44 - INFO - Agendada (fila): test timeout (22:24)
+2026-01-22 22:24:44 - INFO - Agendada (fila): test timeout (22:25)
+2026-01-22 22:24:44 - INFO - Agendada (fila): test timeout (18:30)
+2026-01-22 22:24:44 - INFO - 22:24, 22:25, 18:30    | test timeout    | 🟢
+2026-01-22 22:24:49 - INFO - Recarregando agendamentos após alteração do config.json...
+2026-01-22 22:24:49 - INFO - Arquivo config.json carregado com sucesso.
+2026-01-22 22:24:49 - INFO - Agendada (fila): test timeout (22:24)
+2026-01-22 22:24:49 - INFO - Agendada (fila): test timeout (22:25)
+2026-01-22 22:24:49 - INFO - Agendada (fila): test timeout (22:30)
+2026-01-22 22:24:49 - INFO - 22:24, 22:25, 22:30    | test timeout    | 🟢
+2026-01-22 22:25:00 - INFO - Enfileirada: test timeout
+2026-01-22 22:25:01 - INFO - Sucesso na chamada de: geraldox.netlify.app/src/db/status.json
+2026-01-22 22:25:04 - INFO - Recarregando agendamentos após alteração do config.json...
+2026-01-22 22:25:04 - INFO - Arquivo config.json carregado com sucesso.
+2026-01-22 22:25:04 - INFO - Agendada (fila): test timeout (22:24)
+2026-01-22 22:25:04 - INFO - Agendada (fila): test timeout (22:25)
+2026-01-22 22:25:04 - INFO - Agendada (fila): test timeout (22:30)
+2026-01-22 22:25:04 - INFO - 22:24, 22:25, 22:30    | test timeout    | 🟢
+2026-01-22 22:30:00 - INFO - Enfileirada: test timeout
+2026-01-22 22:30:00 - INFO - Sucesso na chamada de: geraldox.netlify.app/src/db/status.json
+2026-01-22 22:30:05 - INFO - Recarregando agendamentos após alteração do config.json...
+2026-01-22 22:30:05 - INFO - Arquivo config.json carregado com sucesso.
+2026-01-22 22:30:05 - INFO - Agendada (fila): test timeout (22:24)
+2026-01-22 22:30:05 - INFO - Agendada (fila): test timeout (22:25)
+2026-01-22 22:30:05 - INFO - Agendada (fila): test timeout (22:30)
+2026-01-22 22:30:05 - INFO - 22:24, 22:25, 22:30    | test timeout    | 🟢
