@@ -582,7 +582,7 @@ def executar_tarefa_se_ativa(task):
             # 1) sendNow tem prioridade
             if task.get("sendNow", False):
                 should_send = True                
-                reason = "envio imediato"
+                reason = "Envio de email imediato | sendNow detectado"
                 # auto-reset pra não virar spam mudar o valor do sendNow (entao o email so é disparado uma vez)
                 #task["sendNow"] = False
 
@@ -608,7 +608,7 @@ def executar_tarefa_se_ativa(task):
                     corpo_html=html,
                     corpo_texto=texto
                 )
-                success_logger.info(f"{reason} | {desc} | email enviado")
+                success_logger.info(f"{desc} | email enviado | {reason}")
 
         # marca lastRun + salva
         try:

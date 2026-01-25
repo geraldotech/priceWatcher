@@ -50,3 +50,9 @@
 2026-01-25 11:41:01 - INFO - amazon: Apple-iPhone-Pro-Max-256 | www.amazon.com.br/Apple-iPhone-Pro-Max-256/dp/B0FQJ2KJ9X | selector=amazon-special | value=R$ 12.498,84 | tempo de busca=0.68s
 2026-01-25 11:41:34 - INFO - E-mail enviado | para=['geraldo.filho92@hotmail.com', 'geraldo.filho92@gmail.com'] | assunto='🔥 Alerta de preço: amazon: Apple-iPhone-Pro-Max-256'
 2026-01-25 11:41:34 - INFO - envio imediato | amazon: Apple-iPhone-Pro-Max-256 | email enviado
+2026-01-25 11:50:03 - INFO - amazon: MX Anywhere 3 | www.amazon.com.br/Logitech-Confort%C3%A1vel-Superf%C3%ADcie-Bluetooth-Recarreg%C3%A1vel/dp/B08NLQ9CQK | selector=amazon-special | value=R$ 500,00 | tempo de busca=2.26s
+2026-01-25 11:50:35 - INFO - E-mail enviado | para=['geraldo.filho92@hotmail.com', 'geraldo.filho92@gmail.com'] | assunto='🔥 Alerta de preço: amazon: MX Anywhere 3'
+2026-01-25 11:50:35 - INFO - envio imediato | amazon: MX Anywhere 3 | email enviado
+2026-01-25 15:29:02 - INFO - amazon: Apple-iPhone 17 -Pro-Max-256 | www.amazon.com.br/Apple-iPhone-Pro-Max-256/dp/B0FQJ2KJ9X | selector=amazon-special | value=R$ 11.248,99 | tempo de busca=1.86s
+2026-01-25 15:29:34 - INFO - E-mail enviado | para=['geraldo.filho92@hotmail.com', 'geraldo.filho92@gmail.com'] | assunto='🔥 Alerta de preço: amazon: Apple-iPhone 17 -Pro-Max-256'
+2026-01-25 15:29:34 - INFO - envio imediato | amazon: Apple-iPhone 17 -Pro-Max-256 | email enviado

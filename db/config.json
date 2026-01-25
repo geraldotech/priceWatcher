@@ -41,19 +41,19 @@
             "alertSent": false
         },
         {
-            "description": "amazon: Apple-iPhone-Pro-Max-256",
+            "description": "amazon: Apple-iPhone 17 -Pro-Max-256",
             "url": "https://www.amazon.com.br/Apple-iPhone-Pro-Max-256/dp/B0FQJ2KJ9X?th=1",
             "times": [
                 "10:59",
                 "11:00",
-                "11:41"
+                "15:29"
             ],
             "status": true,
             "id": "7b336553",
-            "lastValue": "R$ 12.498,84",
+            "lastValue": "R$ 11.248,99",
             "targetPrice": 11000.0,
             "sendNow": true,
-            "lastRun": "2026-01-25T11:41:34"
+            "lastRun": "2026-01-25T15:29:34"
         },
         {
             "description": "amazon: MX Anywhere 3",
@@ -66,6 +66,17 @@
             "id": "df256bd553",
             "lastValue": "R$ 500,00",
             "lastRun": "2026-01-25T11:50:35"
+        },
+        {
+            "description": "mercadolivre: S23 ULTRA",
+            "url": "https://www.mercadolivre.com.br/samsung-galaxy-s23-ultra-5g-dual-sim-256-gb-preto-12-gb-ram/p/MLB24594025",
+            "times": [
+                "15:21"
+            ],
+            "sendNow": true,
+            "status": false,
+            "id": "df2562323bd553",
+            "lastRun": "2026-01-25T12:04:00"
         }
     ]
 }

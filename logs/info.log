@@ -418,3 +418,305 @@
 2026-01-25 11:47:27 - INFO - 10:59, 11:00, 11:41    | amazon: Apple-i | 🟢
 2026-01-25 11:47:27 - INFO - 11:50                  | amazon: MX Anyw | 🟢
 2026-01-25 11:48:17 - INFO - Script interrompido pelo usuário.
+2026-01-25 11:48:18 - INFO - Arquivo config.json carregado com sucesso.
+2026-01-25 11:48:18 - INFO - Arquivo sites.json carregado com sucesso (db\sites.json).
+2026-01-25 11:48:18 - INFO - Configuração de email carregada | destinatarios=['geraldo.filho92@hotmail.com', 'geraldo.filho92@gmail.com']
+2026-01-25 11:48:18 - INFO - Worker de execução lenta iniciado.
+2026-01-25 11:48:18 - INFO - 08:49, 22:50           | zonasul: cafe 3 coracoes | 🟢
+2026-01-25 11:48:18 - INFO - 16:58, 17:00           | zonasul: azeite-extra-vir | 🔴
+2026-01-25 11:48:18 - INFO - 11:31                  | amazon: Samsung Galaxy S2 | 🟢
+2026-01-25 11:48:18 - INFO - 10:59, 11:00, 11:41    | amazon: Apple-iPhone-Pro- | 🟢
+2026-01-25 11:48:18 - INFO - 11:50                  | amazon: MX Anywhere 3 | 🟢
+2026-01-25 11:48:18 - INFO - Agendada (fila): zonasul: cafe 3 coracoes (08:49)
+2026-01-25 11:48:18 - INFO - Agendada (fila): zonasul: cafe 3 coracoes (22:50)
+2026-01-25 11:48:18 - INFO - Tarefa desativada: zonasul: azeite-extra-virgem
+2026-01-25 11:48:18 - INFO - Agendada (fila): amazon: Samsung Galaxy S24U (11:31)
+2026-01-25 11:48:18 - INFO - Agendada (fila): amazon: Apple-iPhone-Pro-Max-256 (10:59)
+2026-01-25 11:48:18 - INFO - Agendada (fila): amazon: Apple-iPhone-Pro-Max-256 (11:00)
+2026-01-25 11:48:18 - INFO - Agendada (fila): amazon: Apple-iPhone-Pro-Max-256 (11:41)
+2026-01-25 11:48:18 - INFO - Agendada (fila): amazon: MX Anywhere 3 (11:50)
+2026-01-25 11:50:00 - INFO - Enfileirada: amazon: MX Anywhere 3
+2026-01-25 11:50:38 - INFO - Recarregando agendamentos após alteração do config.json...
+2026-01-25 11:50:38 - INFO - Arquivo config.json carregado com sucesso.
+2026-01-25 11:50:38 - INFO - Agendada (fila): zonasul: cafe 3 coracoes (08:49)
+2026-01-25 11:50:38 - INFO - Agendada (fila): zonasul: cafe 3 coracoes (22:50)
+2026-01-25 11:50:38 - INFO - Tarefa desativada: zonasul: azeite-extra-virgem
+2026-01-25 11:50:38 - INFO - Agendada (fila): amazon: Samsung Galaxy S24U (11:31)
+2026-01-25 11:50:38 - INFO - Agendada (fila): amazon: Apple-iPhone-Pro-Max-256 (10:59)
+2026-01-25 11:50:38 - INFO - Agendada (fila): amazon: Apple-iPhone-Pro-Max-256 (11:00)
+2026-01-25 11:50:38 - INFO - Agendada (fila): amazon: Apple-iPhone-Pro-Max-256 (11:41)
+2026-01-25 11:50:38 - INFO - Agendada (fila): amazon: MX Anywhere 3 (11:50)
+2026-01-25 11:50:38 - INFO - 08:49, 22:50           | zonasul: cafe 3 coracoes | 🟢
+2026-01-25 11:50:38 - INFO - 16:58, 17:00           | zonasul: azeite-extra-vir | 🔴
+2026-01-25 11:50:38 - INFO - 11:31                  | amazon: Samsung Galaxy S2 | 🟢
+2026-01-25 11:50:38 - INFO - 10:59, 11:00, 11:41    | amazon: Apple-iPhone-Pro- | 🟢
+2026-01-25 11:50:38 - INFO - 11:50                  | amazon: MX Anywhere 3 | 🟢
+2026-01-25 11:58:14 - INFO - Recarregando agendamentos após alteração do config.json...
+2026-01-25 11:58:14 - ERROR - Erro ao decodificar o arquivo config.json.
+2026-01-25 11:58:19 - INFO - Recarregando agendamentos após alteração do config.json...
+2026-01-25 11:58:19 - INFO - Arquivo config.json carregado com sucesso.
+2026-01-25 11:58:19 - INFO - Agendada (fila): zonasul: cafe 3 coracoes (08:49)
+2026-01-25 11:58:19 - INFO - Agendada (fila): zonasul: cafe 3 coracoes (22:50)
+2026-01-25 11:58:19 - INFO - Tarefa desativada: zonasul: azeite-extra-virgem
+2026-01-25 11:58:19 - INFO - Agendada (fila): amazon: Samsung Galaxy S24U (11:31)
+2026-01-25 11:58:19 - INFO - Agendada (fila): amazon: Apple-iPhone-Pro-Max-256 (10:59)
+2026-01-25 11:58:19 - INFO - Agendada (fila): amazon: Apple-iPhone-Pro-Max-256 (11:00)
+2026-01-25 11:58:19 - INFO - Agendada (fila): amazon: Apple-iPhone-Pro-Max-256 (11:41)
+2026-01-25 11:58:19 - INFO - Agendada (fila): amazon: MX Anywhere 3 (11:50)
+2026-01-25 11:58:19 - INFO - Agendada (fila): mercadolivre: S23 ULTRA (12:00)
+2026-01-25 11:58:19 - INFO - 08:49, 22:50           | zonasul: cafe 3 coracoes | 🟢
+2026-01-25 11:58:19 - INFO - 16:58, 17:00           | zonasul: azeite-extra-vir | 🔴
+2026-01-25 11:58:19 - INFO - 11:31                  | amazon: Samsung Galaxy S2 | 🟢
+2026-01-25 11:58:19 - INFO - 10:59, 11:00, 11:41    | amazon: Apple-iPhone-Pro- | 🟢
+2026-01-25 11:58:19 - INFO - 11:50                  | amazon: MX Anywhere 3 | 🟢
+2026-01-25 11:58:19 - INFO - 12:00                  | mercadolivre: S23 ULTRA | 🟢
+2026-01-25 12:00:00 - INFO - Enfileirada: mercadolivre: S23 ULTRA
+2026-01-25 12:00:04 - INFO - Recarregando agendamentos após alteração do config.json...
+2026-01-25 12:00:04 - INFO - Arquivo config.json carregado com sucesso.
+2026-01-25 12:00:04 - INFO - Agendada (fila): zonasul: cafe 3 coracoes (08:49)
+2026-01-25 12:00:04 - INFO - Agendada (fila): zonasul: cafe 3 coracoes (22:50)
+2026-01-25 12:00:04 - INFO - Tarefa desativada: zonasul: azeite-extra-virgem
+2026-01-25 12:00:04 - INFO - Agendada (fila): amazon: Samsung Galaxy S24U (11:31)
+2026-01-25 12:00:04 - INFO - Agendada (fila): amazon: Apple-iPhone-Pro-Max-256 (10:59)
+2026-01-25 12:00:04 - INFO - Agendada (fila): amazon: Apple-iPhone-Pro-Max-256 (11:00)
+2026-01-25 12:00:04 - INFO - Agendada (fila): amazon: Apple-iPhone-Pro-Max-256 (11:41)
+2026-01-25 12:00:04 - INFO - Agendada (fila): amazon: MX Anywhere 3 (11:50)
+2026-01-25 12:00:04 - INFO - Agendada (fila): mercadolivre: S23 ULTRA (12:00)
+2026-01-25 12:00:04 - INFO - 08:49, 22:50           | zonasul: cafe 3 coracoes | 🟢
+2026-01-25 12:00:04 - INFO - 16:58, 17:00           | zonasul: azeite-extra-vir | 🔴
+2026-01-25 12:00:04 - INFO - 11:31                  | amazon: Samsung Galaxy S2 | 🟢
+2026-01-25 12:00:04 - INFO - 10:59, 11:00, 11:41    | amazon: Apple-iPhone-Pro- | 🟢
+2026-01-25 12:00:04 - INFO - 11:50                  | amazon: MX Anywhere 3 | 🟢
+2026-01-25 12:00:04 - INFO - 12:00                  | mercadolivre: S23 ULTRA | 🟢
+2026-01-25 12:03:29 - INFO - Recarregando agendamentos após alteração do config.json...
+2026-01-25 12:03:29 - INFO - Arquivo config.json carregado com sucesso.
+2026-01-25 12:03:29 - INFO - Agendada (fila): zonasul: cafe 3 coracoes (08:49)
+2026-01-25 12:03:29 - INFO - Agendada (fila): zonasul: cafe 3 coracoes (22:50)
+2026-01-25 12:03:29 - INFO - Tarefa desativada: zonasul: azeite-extra-virgem
+2026-01-25 12:03:29 - INFO - Agendada (fila): amazon: Samsung Galaxy S24U (11:31)
+2026-01-25 12:03:29 - INFO - Agendada (fila): amazon: Apple-iPhone-Pro-Max-256 (10:59)
+2026-01-25 12:03:29 - INFO - Agendada (fila): amazon: Apple-iPhone-Pro-Max-256 (11:00)
+2026-01-25 12:03:29 - INFO - Agendada (fila): amazon: Apple-iPhone-Pro-Max-256 (11:41)
+2026-01-25 12:03:29 - INFO - Agendada (fila): amazon: MX Anywhere 3 (11:50)
+2026-01-25 12:03:29 - INFO - Agendada (fila): mercadolivre: S23 ULTRA (12:04)
+2026-01-25 12:03:29 - INFO - 08:49, 22:50           | zonasul: cafe 3 coracoes | 🟢
+2026-01-25 12:03:29 - INFO - 16:58, 17:00           | zonasul: azeite-extra-vir | 🔴
+2026-01-25 12:03:29 - INFO - 11:31                  | amazon: Samsung Galaxy S2 | 🟢
+2026-01-25 12:03:29 - INFO - 10:59, 11:00, 11:41    | amazon: Apple-iPhone-Pro- | 🟢
+2026-01-25 12:03:29 - INFO - 11:50                  | amazon: MX Anywhere 3 | 🟢
+2026-01-25 12:03:29 - INFO - 12:04                  | mercadolivre: S23 ULTRA | 🟢
+2026-01-25 12:03:34 - INFO - Recarregando agendamentos após alteração do config.json...
+2026-01-25 12:03:34 - INFO - Arquivo config.json carregado com sucesso.
+2026-01-25 12:03:34 - INFO - Agendada (fila): zonasul: cafe 3 coracoes (08:49)
+2026-01-25 12:03:34 - INFO - Agendada (fila): zonasul: cafe 3 coracoes (22:50)
+2026-01-25 12:03:34 - INFO - Tarefa desativada: zonasul: azeite-extra-virgem
+2026-01-25 12:03:34 - INFO - Agendada (fila): amazon: Samsung Galaxy S24U (11:31)
+2026-01-25 12:03:34 - INFO - Agendada (fila): amazon: Apple-iPhone-Pro-Max-256 (10:59)
+2026-01-25 12:03:34 - INFO - Agendada (fila): amazon: Apple-iPhone-Pro-Max-256 (11:00)
+2026-01-25 12:03:34 - INFO - Agendada (fila): amazon: Apple-iPhone-Pro-Max-256 (11:41)
+2026-01-25 12:03:34 - INFO - Agendada (fila): amazon: MX Anywhere 3 (11:50)
+2026-01-25 12:03:34 - INFO - Agendada (fila): mercadolivre: S23 ULTRA (12:04)
+2026-01-25 12:03:34 - INFO - 08:49, 22:50           | zonasul: cafe 3 coracoes | 🟢
+2026-01-25 12:03:34 - INFO - 16:58, 17:00           | zonasul: azeite-extra-vir | 🔴
+2026-01-25 12:03:34 - INFO - 11:31                  | amazon: Samsung Galaxy S2 | 🟢
+2026-01-25 12:03:34 - INFO - 10:59, 11:00, 11:41    | amazon: Apple-iPhone-Pro- | 🟢
+2026-01-25 12:03:34 - INFO - 11:50                  | amazon: MX Anywhere 3 | 🟢
+2026-01-25 12:03:34 - INFO - 12:04                  | mercadolivre: S23 ULTRA | 🟢
+2026-01-25 12:04:00 - INFO - Enfileirada: mercadolivre: S23 ULTRA
+2026-01-25 12:04:04 - INFO - Recarregando agendamentos após alteração do config.json...
+2026-01-25 12:04:04 - INFO - Arquivo config.json carregado com sucesso.
+2026-01-25 12:04:04 - INFO - Agendada (fila): zonasul: cafe 3 coracoes (08:49)
+2026-01-25 12:04:04 - INFO - Agendada (fila): zonasul: cafe 3 coracoes (22:50)
+2026-01-25 12:04:04 - INFO - Tarefa desativada: zonasul: azeite-extra-virgem
+2026-01-25 12:04:04 - INFO - Agendada (fila): amazon: Samsung Galaxy S24U (11:31)
+2026-01-25 12:04:04 - INFO - Agendada (fila): amazon: Apple-iPhone-Pro-Max-256 (10:59)
+2026-01-25 12:04:04 - INFO - Agendada (fila): amazon: Apple-iPhone-Pro-Max-256 (11:00)
+2026-01-25 12:04:04 - INFO - Agendada (fila): amazon: Apple-iPhone-Pro-Max-256 (11:41)
+2026-01-25 12:04:04 - INFO - Agendada (fila): amazon: MX Anywhere 3 (11:50)
+2026-01-25 12:04:04 - INFO - Agendada (fila): mercadolivre: S23 ULTRA (12:04)
+2026-01-25 12:04:04 - INFO - 08:49, 22:50           | zonasul: cafe 3 coracoes | 🟢
+2026-01-25 12:04:04 - INFO - 16:58, 17:00           | zonasul: azeite-extra-vir | 🔴
+2026-01-25 12:04:04 - INFO - 11:31                  | amazon: Samsung Galaxy S2 | 🟢
+2026-01-25 12:04:04 - INFO - 10:59, 11:00, 11:41    | amazon: Apple-iPhone-Pro- | 🟢
+2026-01-25 12:04:04 - INFO - 11:50                  | amazon: MX Anywhere 3 | 🟢
+2026-01-25 12:04:04 - INFO - 12:04                  | mercadolivre: S23 ULTRA | 🟢
+2026-01-25 15:18:46 - INFO - Recarregando agendamentos após alteração do config.json...
+2026-01-25 15:18:46 - INFO - Arquivo config.json carregado com sucesso.
+2026-01-25 15:18:46 - INFO - Agendada (fila): zonasul: cafe 3 coracoes (08:49)
+2026-01-25 15:18:46 - INFO - Agendada (fila): zonasul: cafe 3 coracoes (22:50)
+2026-01-25 15:18:46 - INFO - Tarefa desativada: zonasul: azeite-extra-virgem
+2026-01-25 15:18:46 - INFO - Agendada (fila): amazon: Samsung Galaxy S24U (11:31)
+2026-01-25 15:18:46 - INFO - Agendada (fila): amazon: Apple-iPhone-Pro-Max-256 (10:59)
+2026-01-25 15:18:46 - INFO - Agendada (fila): amazon: Apple-iPhone-Pro-Max-256 (11:00)
+2026-01-25 15:18:46 - INFO - Agendada (fila): amazon: Apple-iPhone-Pro-Max-256 (11:41)
+2026-01-25 15:18:46 - INFO - Agendada (fila): amazon: MX Anywhere 3 (11:50)
+2026-01-25 15:18:46 - INFO - Agendada (fila): mercadolivre: S23 ULTRA (15:19)
+2026-01-25 15:18:46 - INFO - 08:49, 22:50           | zonasul: cafe 3 coracoes | 🟢
+2026-01-25 15:18:46 - INFO - 16:58, 17:00           | zonasul: azeite-extra-vir | 🔴
+2026-01-25 15:18:46 - INFO - 11:31                  | amazon: Samsung Galaxy S2 | 🟢
+2026-01-25 15:18:46 - INFO - 10:59, 11:00, 11:41    | amazon: Apple-iPhone-Pro- | 🟢
+2026-01-25 15:18:46 - INFO - 11:50                  | amazon: MX Anywhere 3 | 🟢
+2026-01-25 15:18:46 - INFO - 15:19                  | mercadolivre: S23 ULTRA | 🟢
+2026-01-25 15:18:50 - INFO - Script interrompido pelo usuário.
+2026-01-25 15:18:50 - INFO - Arquivo config.json carregado com sucesso.
+2026-01-25 15:18:50 - INFO - Arquivo sites.json carregado com sucesso (db\sites.json).
+2026-01-25 15:18:50 - INFO - Configuração de email carregada | destinatarios=['geraldo.filho92@hotmail.com', 'geraldo.filho92@gmail.com']
+2026-01-25 15:18:50 - INFO - Worker de execução lenta iniciado.
+2026-01-25 15:18:50 - INFO - 08:49, 22:50           | zonasul: cafe 3 coracoes | 🟢
+2026-01-25 15:18:50 - INFO - 16:58, 17:00           | zonasul: azeite-extra-vir | 🔴
+2026-01-25 15:18:50 - INFO - 11:31                  | amazon: Samsung Galaxy S2 | 🟢
+2026-01-25 15:18:50 - INFO - 10:59, 11:00, 11:41    | amazon: Apple-iPhone-Pro- | 🟢
+2026-01-25 15:18:50 - INFO - 11:50                  | amazon: MX Anywhere 3 | 🟢
+2026-01-25 15:18:50 - INFO - 15:19                  | mercadolivre: S23 ULTRA | 🟢
+2026-01-25 15:18:50 - INFO - Agendada (fila): zonasul: cafe 3 coracoes (08:49)
+2026-01-25 15:18:50 - INFO - Agendada (fila): zonasul: cafe 3 coracoes (22:50)
+2026-01-25 15:18:50 - INFO - Tarefa desativada: zonasul: azeite-extra-virgem
+2026-01-25 15:18:50 - INFO - Agendada (fila): amazon: Samsung Galaxy S24U (11:31)
+2026-01-25 15:18:50 - INFO - Agendada (fila): amazon: Apple-iPhone-Pro-Max-256 (10:59)
+2026-01-25 15:18:50 - INFO - Agendada (fila): amazon: Apple-iPhone-Pro-Max-256 (11:00)
+2026-01-25 15:18:50 - INFO - Agendada (fila): amazon: Apple-iPhone-Pro-Max-256 (11:41)
+2026-01-25 15:18:50 - INFO - Agendada (fila): amazon: MX Anywhere 3 (11:50)
+2026-01-25 15:18:50 - INFO - Agendada (fila): mercadolivre: S23 ULTRA (15:19)
+2026-01-25 15:19:00 - INFO - Enfileirada: mercadolivre: S23 ULTRA
+2026-01-25 15:20:49 - INFO - Script interrompido pelo usuário.
+2026-01-25 15:20:50 - INFO - Arquivo config.json carregado com sucesso.
+2026-01-25 15:20:50 - INFO - Arquivo sites.json carregado com sucesso (db\sites.json).
+2026-01-25 15:20:50 - INFO - Configuração de email carregada | destinatarios=['geraldo.filho92@hotmail.com', 'geraldo.filho92@gmail.com']
+2026-01-25 15:20:50 - INFO - Worker de execução lenta iniciado.
+2026-01-25 15:20:50 - INFO - 08:49, 22:50           | zonasul: cafe 3 coracoes | 🟢
+2026-01-25 15:20:50 - INFO - 16:58, 17:00           | zonasul: azeite-extra-vir | 🔴
+2026-01-25 15:20:50 - INFO - 11:31                  | amazon: Samsung Galaxy S2 | 🟢
+2026-01-25 15:20:50 - INFO - 10:59, 11:00, 11:41    | amazon: Apple-iPhone-Pro- | 🟢
+2026-01-25 15:20:50 - INFO - 11:50                  | amazon: MX Anywhere 3 | 🟢
+2026-01-25 15:20:50 - INFO - 15:19                  | mercadolivre: S23 ULTRA | 🟢
+2026-01-25 15:20:50 - INFO - Agendada (fila): zonasul: cafe 3 coracoes (08:49)
+2026-01-25 15:20:50 - INFO - Agendada (fila): zonasul: cafe 3 coracoes (22:50)
+2026-01-25 15:20:50 - INFO - Tarefa desativada: zonasul: azeite-extra-virgem
+2026-01-25 15:20:50 - INFO - Agendada (fila): amazon: Samsung Galaxy S24U (11:31)
+2026-01-25 15:20:50 - INFO - Agendada (fila): amazon: Apple-iPhone-Pro-Max-256 (10:59)
+2026-01-25 15:20:50 - INFO - Agendada (fila): amazon: Apple-iPhone-Pro-Max-256 (11:00)
+2026-01-25 15:20:50 - INFO - Agendada (fila): amazon: Apple-iPhone-Pro-Max-256 (11:41)
+2026-01-25 15:20:50 - INFO - Agendada (fila): amazon: MX Anywhere 3 (11:50)
+2026-01-25 15:20:50 - INFO - Agendada (fila): mercadolivre: S23 ULTRA (15:19)
+2026-01-25 15:21:00 - INFO - Recarregando agendamentos após alteração do config.json...
+2026-01-25 15:21:00 - INFO - Arquivo config.json carregado com sucesso.
+2026-01-25 15:21:00 - INFO - Agendada (fila): zonasul: cafe 3 coracoes (08:49)
+2026-01-25 15:21:00 - INFO - Agendada (fila): zonasul: cafe 3 coracoes (22:50)
+2026-01-25 15:21:00 - INFO - Tarefa desativada: zonasul: azeite-extra-virgem
+2026-01-25 15:21:00 - INFO - Agendada (fila): amazon: Samsung Galaxy S24U (11:31)
+2026-01-25 15:21:00 - INFO - Agendada (fila): amazon: Apple-iPhone-Pro-Max-256 (10:59)
+2026-01-25 15:21:00 - INFO - Agendada (fila): amazon: Apple-iPhone-Pro-Max-256 (11:00)
+2026-01-25 15:21:00 - INFO - Agendada (fila): amazon: Apple-iPhone-Pro-Max-256 (11:41)
+2026-01-25 15:21:00 - INFO - Agendada (fila): amazon: MX Anywhere 3 (11:50)
+2026-01-25 15:21:00 - INFO - Agendada (fila): mercadolivre: S23 ULTRA (15:21)
+2026-01-25 15:21:00 - INFO - 08:49, 22:50           | zonasul: cafe 3 coracoes | 🟢
+2026-01-25 15:21:00 - INFO - 16:58, 17:00           | zonasul: azeite-extra-vir | 🔴
+2026-01-25 15:21:00 - INFO - 11:31                  | amazon: Samsung Galaxy S2 | 🟢
+2026-01-25 15:21:00 - INFO - 10:59, 11:00, 11:41    | amazon: Apple-iPhone-Pro- | 🟢
+2026-01-25 15:21:00 - INFO - 11:50                  | amazon: MX Anywhere 3 | 🟢
+2026-01-25 15:21:00 - INFO - 15:21                  | mercadolivre: S23 ULTRA | 🟢
+2026-01-25 15:24:55 - INFO - Recarregando agendamentos após alteração do config.json...
+2026-01-25 15:24:55 - INFO - Arquivo config.json carregado com sucesso.
+2026-01-25 15:24:55 - INFO - Agendada (fila): zonasul: cafe 3 coracoes (08:49)
+2026-01-25 15:24:55 - INFO - Agendada (fila): zonasul: cafe 3 coracoes (22:50)
+2026-01-25 15:24:55 - INFO - Tarefa desativada: zonasul: azeite-extra-virgem
+2026-01-25 15:24:55 - INFO - Agendada (fila): amazon: Samsung Galaxy S24U (11:31)
+2026-01-25 15:24:55 - INFO - Agendada (fila): amazon: Apple-iPhone-Pro-Max-256 (10:59)
+2026-01-25 15:24:55 - INFO - Agendada (fila): amazon: Apple-iPhone-Pro-Max-256 (11:00)
+2026-01-25 15:24:55 - INFO - Agendada (fila): amazon: Apple-iPhone-Pro-Max-256 (11:41)
+2026-01-25 15:24:55 - INFO - Agendada (fila): amazon: MX Anywhere 3 (11:50)
+2026-01-25 15:24:55 - INFO - Tarefa desativada: mercadolivre: S23 ULTRA
+2026-01-25 15:24:55 - INFO - 08:49, 22:50           | zonasul: cafe 3 coracoes | 🟢
+2026-01-25 15:24:55 - INFO - 16:58, 17:00           | zonasul: azeite-extra-vir | 🔴
+2026-01-25 15:24:55 - INFO - 11:31                  | amazon: Samsung Galaxy S2 | 🟢
+2026-01-25 15:24:55 - INFO - 10:59, 11:00, 11:41    | amazon: Apple-iPhone-Pro- | 🟢
+2026-01-25 15:24:55 - INFO - 11:50                  | amazon: MX Anywhere 3 | 🟢
+2026-01-25 15:24:55 - INFO - 15:21                  | mercadolivre: S23 ULTRA | 🔴
+2026-01-25 15:25:15 - INFO - Recarregando agendamentos após alteração do config.json...
+2026-01-25 15:25:15 - INFO - Arquivo config.json carregado com sucesso.
+2026-01-25 15:25:15 - INFO - Agendada (fila): zonasul: cafe 3 coracoes (08:49)
+2026-01-25 15:25:15 - INFO - Agendada (fila): zonasul: cafe 3 coracoes (22:50)
+2026-01-25 15:25:15 - INFO - Tarefa desativada: zonasul: azeite-extra-virgem
+2026-01-25 15:25:15 - INFO - Agendada (fila): amazon: Samsung Galaxy S24U (11:31)
+2026-01-25 15:25:15 - INFO - Agendada (fila): amazon: Apple-iPhone 17 -Pro-Max-256 (10:59)
+2026-01-25 15:25:15 - INFO - Agendada (fila): amazon: Apple-iPhone 17 -Pro-Max-256 (11:00)
+2026-01-25 15:25:15 - INFO - Agendada (fila): amazon: Apple-iPhone 17 -Pro-Max-256 (11:41)
+2026-01-25 15:25:15 - INFO - Agendada (fila): amazon: MX Anywhere 3 (11:50)
+2026-01-25 15:25:15 - INFO - Tarefa desativada: mercadolivre: S23 ULTRA
+2026-01-25 15:25:15 - INFO - 08:49, 22:50           | zonasul: cafe 3 coracoes | 🟢
+2026-01-25 15:25:15 - INFO - 16:58, 17:00           | zonasul: azeite-extra-vir | 🔴
+2026-01-25 15:25:15 - INFO - 11:31                  | amazon: Samsung Galaxy S2 | 🟢
+2026-01-25 15:25:15 - INFO - 10:59, 11:00, 11:41    | amazon: Apple-iPhone 17 - | 🟢
+2026-01-25 15:25:15 - INFO - 11:50                  | amazon: MX Anywhere 3 | 🟢
+2026-01-25 15:25:15 - INFO - 15:21                  | mercadolivre: S23 ULTRA | 🔴
+2026-01-25 15:25:20 - INFO - Recarregando agendamentos após alteração do config.json...
+2026-01-25 15:25:21 - INFO - Arquivo config.json carregado com sucesso.
+2026-01-25 15:25:21 - INFO - Agendada (fila): zonasul: cafe 3 coracoes (08:49)
+2026-01-25 15:25:21 - INFO - Agendada (fila): zonasul: cafe 3 coracoes (22:50)
+2026-01-25 15:25:21 - INFO - Tarefa desativada: zonasul: azeite-extra-virgem
+2026-01-25 15:25:21 - INFO - Agendada (fila): amazon: Samsung Galaxy S24U (11:31)
+2026-01-25 15:25:21 - INFO - Agendada (fila): amazon: Apple-iPhone 17 -Pro-Max-256 (10:59)
+2026-01-25 15:25:21 - INFO - Agendada (fila): amazon: Apple-iPhone 17 -Pro-Max-256 (11:00)
+2026-01-25 15:25:21 - INFO - Agendada (fila): amazon: Apple-iPhone 17 -Pro-Max-256 (15:26)
+2026-01-25 15:25:21 - INFO - Agendada (fila): amazon: MX Anywhere 3 (11:50)
+2026-01-25 15:25:21 - INFO - Tarefa desativada: mercadolivre: S23 ULTRA
+2026-01-25 15:25:21 - INFO - 08:49, 22:50           | zonasul: cafe 3 coracoes | 🟢
+2026-01-25 15:25:21 - INFO - 16:58, 17:00           | zonasul: azeite-extra-vir | 🔴
+2026-01-25 15:25:21 - INFO - 11:31                  | amazon: Samsung Galaxy S2 | 🟢
+2026-01-25 15:25:21 - INFO - 10:59, 11:00, 15:26    | amazon: Apple-iPhone 17 - | 🟢
+2026-01-25 15:25:21 - INFO - 11:50                  | amazon: MX Anywhere 3 | 🟢
+2026-01-25 15:25:21 - INFO - 15:21                  | mercadolivre: S23 ULTRA | 🔴
+2026-01-25 15:26:00 - INFO - Enfileirada: amazon: Apple-iPhone 17 -Pro-Max-256
+2026-01-25 15:26:01 - INFO - Recarregando agendamentos após alteração do config.json...
+2026-01-25 15:26:01 - INFO - Arquivo config.json carregado com sucesso.
+2026-01-25 15:26:01 - INFO - Agendada (fila): zonasul: cafe 3 coracoes (08:49)
+2026-01-25 15:26:01 - INFO - Agendada (fila): zonasul: cafe 3 coracoes (22:50)
+2026-01-25 15:26:01 - INFO - Tarefa desativada: zonasul: azeite-extra-virgem
+2026-01-25 15:26:01 - INFO - Agendada (fila): amazon: Samsung Galaxy S24U (11:31)
+2026-01-25 15:26:01 - INFO - Agendada (fila): amazon: Apple-iPhone 17 -Pro-Max-256 (10:59)
+2026-01-25 15:26:01 - INFO - Agendada (fila): amazon: Apple-iPhone 17 -Pro-Max-256 (11:00)
+2026-01-25 15:26:01 - INFO - Agendada (fila): amazon: Apple-iPhone 17 -Pro-Max-256 (15:26)
+2026-01-25 15:26:01 - INFO - Agendada (fila): amazon: MX Anywhere 3 (11:50)
+2026-01-25 15:26:01 - INFO - Tarefa desativada: mercadolivre: S23 ULTRA
+2026-01-25 15:26:01 - INFO - 08:49, 22:50           | zonasul: cafe 3 coracoes | 🟢
+2026-01-25 15:26:01 - INFO - 16:58, 17:00           | zonasul: azeite-extra-vir | 🔴
+2026-01-25 15:26:01 - INFO - 11:31                  | amazon: Samsung Galaxy S2 | 🟢
+2026-01-25 15:26:01 - INFO - 10:59, 11:00, 15:26    | amazon: Apple-iPhone 17 - | 🟢
+2026-01-25 15:26:01 - INFO - 11:50                  | amazon: MX Anywhere 3 | 🟢
+2026-01-25 15:26:01 - INFO - 15:21                  | mercadolivre: S23 ULTRA | 🔴
+2026-01-25 15:28:21 - INFO - Recarregando agendamentos após alteração do config.json...
+2026-01-25 15:28:21 - INFO - Arquivo config.json carregado com sucesso.
+2026-01-25 15:28:21 - INFO - Agendada (fila): zonasul: cafe 3 coracoes (08:49)
+2026-01-25 15:28:21 - INFO - Agendada (fila): zonasul: cafe 3 coracoes (22:50)
+2026-01-25 15:28:21 - INFO - Tarefa desativada: zonasul: azeite-extra-virgem
+2026-01-25 15:28:21 - INFO - Agendada (fila): amazon: Samsung Galaxy S24U (11:31)
+2026-01-25 15:28:21 - INFO - Agendada (fila): amazon: Apple-iPhone 17 -Pro-Max-256 (10:59)
+2026-01-25 15:28:21 - INFO - Agendada (fila): amazon: Apple-iPhone 17 -Pro-Max-256 (11:00)
+2026-01-25 15:28:21 - INFO - Agendada (fila): amazon: Apple-iPhone 17 -Pro-Max-256 (15:29)
+2026-01-25 15:28:21 - INFO - Agendada (fila): amazon: MX Anywhere 3 (11:50)
+2026-01-25 15:28:21 - INFO - Tarefa desativada: mercadolivre: S23 ULTRA
+2026-01-25 15:28:21 - INFO - 08:49, 22:50           | zonasul: cafe 3 coracoes | 🟢
+2026-01-25 15:28:21 - INFO - 16:58, 17:00           | zonasul: azeite-extra-vir | 🔴
+2026-01-25 15:28:21 - INFO - 11:31                  | amazon: Samsung Galaxy S2 | 🟢
+2026-01-25 15:28:21 - INFO - 10:59, 11:00, 15:29    | amazon: Apple-iPhone 17 - | 🟢
+2026-01-25 15:28:21 - INFO - 11:50                  | amazon: MX Anywhere 3 | 🟢
+2026-01-25 15:28:21 - INFO - 15:21                  | mercadolivre: S23 ULTRA | 🔴
+2026-01-25 15:29:00 - INFO - Enfileirada: amazon: Apple-iPhone 17 -Pro-Max-256
+2026-01-25 15:29:36 - INFO - Recarregando agendamentos após alteração do config.json...
+2026-01-25 15:29:36 - INFO - Arquivo config.json carregado com sucesso.
+2026-01-25 15:29:36 - INFO - Agendada (fila): zonasul: cafe 3 coracoes (08:49)
+2026-01-25 15:29:36 - INFO - Agendada (fila): zonasul: cafe 3 coracoes (22:50)
+2026-01-25 15:29:36 - INFO - Tarefa desativada: zonasul: azeite-extra-virgem
+2026-01-25 15:29:36 - INFO - Agendada (fila): amazon: Samsung Galaxy S24U (11:31)
+2026-01-25 15:29:36 - INFO - Agendada (fila): amazon: Apple-iPhone 17 -Pro-Max-256 (10:59)
+2026-01-25 15:29:36 - INFO - Agendada (fila): amazon: Apple-iPhone 17 -Pro-Max-256 (11:00)
+2026-01-25 15:29:36 - INFO - Agendada (fila): amazon: Apple-iPhone 17 -Pro-Max-256 (15:29)
+2026-01-25 15:29:36 - INFO - Agendada (fila): amazon: MX Anywhere 3 (11:50)
+2026-01-25 15:29:36 - INFO - Tarefa desativada: mercadolivre: S23 ULTRA
+2026-01-25 15:29:36 - INFO - 08:49, 22:50           | zonasul: cafe 3 coracoes | 🟢
+2026-01-25 15:29:36 - INFO - 16:58, 17:00           | zonasul: azeite-extra-vir | 🔴
+2026-01-25 15:29:36 - INFO - 11:31                  | amazon: Samsung Galaxy S2 | 🟢
+2026-01-25 15:29:36 - INFO - 10:59, 11:00, 15:29    | amazon: Apple-iPhone 17 - | 🟢
+2026-01-25 15:29:36 - INFO - 11:50                  | amazon: MX Anywhere 3 | 🟢
+2026-01-25 15:29:36 - INFO - 15:21                  | mercadolivre: S23 ULTRA | 🔴
+2026-01-25 15:35:09 - INFO - Script interrompido pelo usuário.

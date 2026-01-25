@@ -13,9 +13,9 @@
     }
   },
 
-  "carrefour.com.br": {
+  "mercadolivre.com.br": {
     "price": {
-      "selector": ".price__sales"
+      "selector": ".andes-money-amount__fraction"
     }
   }
 }
