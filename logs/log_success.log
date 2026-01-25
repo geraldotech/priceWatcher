@@ -56,3 +56,22 @@
 2026-01-25 15:29:02 - INFO - amazon: Apple-iPhone 17 -Pro-Max-256 | www.amazon.com.br/Apple-iPhone-Pro-Max-256/dp/B0FQJ2KJ9X | selector=amazon-special | value=R$ 11.248,99 | tempo de busca=1.86s
 2026-01-25 15:29:34 - INFO - E-mail enviado | para=['geraldo.filho92@hotmail.com', 'geraldo.filho92@gmail.com'] | assunto='🔥 Alerta de preço: amazon: Apple-iPhone 17 -Pro-Max-256'
 2026-01-25 15:29:34 - INFO - envio imediato | amazon: Apple-iPhone 17 -Pro-Max-256 | email enviado
+2026-01-25 15:37:00 - INFO - mercadolivre: S23 ULTRA | www.mercadolivre.com.br/samsung-galaxy-s23-ultra-5g-dual-sim-256-gb-preto-12-gb-ram/p/MLB24594025 | selector=.andes-money-amount__fraction | value=5.038 | tempo de busca=0.86s
+2026-01-25 15:37:31 - INFO - E-mail enviado | para=['geraldo.filho92@hotmail.com', 'geraldo.filho92@gmail.com'] | assunto='🔥 Alerta de preço: mercadolivre: S23 ULTRA'
+2026-01-25 15:37:31 - INFO - mercadolivre: S23 ULTRA | email enviado | Envio de email imediato | sendNow detectado
+2026-01-25 15:39:01 - INFO - mercadolivre: S23 ULTRA | www.mercadolivre.com.br/samsung-galaxy-s23-ultra-5g-dual-sim-256-gb-preto-12-gb-ram/p/MLB24594025 | selector=.andes-money-amount__fraction | value=5.038 | tempo de busca=1.02s
+2026-01-25 15:39:01 - INFO - preco_atual_dec <= target_dec | mercadolivre: S23 ULTRA
+2026-01-25 15:39:34 - INFO - E-mail enviado | para=['geraldo.filho92@hotmail.com', 'geraldo.filho92@gmail.com'] | assunto='🔥 Alerta de preço: mercadolivre: S23 ULTRA'
+2026-01-25 15:39:34 - INFO - mercadolivre: S23 ULTRA | email enviado | PRECO BAIXO CORRE!
+2026-01-25 15:43:01 - INFO - mercadolivre: galaxy-buds3-fone-de-ouvido | www.mercadolivre.com.br/samsung-galaxy-buds3-fone-de-ouvido-sem-fio-galaxy-ai-cinza/p/MLB38059088 | selector=.andes-money-amount__fraction | value=709 | tempo de busca=0.69s
+2026-01-25 15:43:01 - INFO - preco_atual_dec <= target_dec | mercadolivre: galaxy-buds3-fone-de-ouvido
+2026-01-25 15:43:34 - INFO - E-mail enviado | para=['geraldo.filho92@hotmail.com', 'geraldo.filho92@gmail.com'] | assunto='🔥 Alerta de preço: mercadolivre: galaxy-buds3-fone-de-ouvido'
+2026-01-25 15:43:34 - INFO - mercadolivre: galaxy-buds3-fone-de-ouvido | email enviado | PRECO BAIXO CORRE!
+2026-01-25 15:45:01 - INFO - mercadolivre: galaxy-buds3-fone-de-ouvido | www.mercadolivre.com.br/samsung-galaxy-buds3-fone-de-ouvido-sem-fio-galaxy-ai-cinza/p/MLB38059088 | selector=.andes-money-amount__fraction | value=709 | tempo de busca=0.71s
+2026-01-25 15:45:01 - INFO - preco_atual_dec <= target_dec | mercadolivre: galaxy-buds3-fone-de-ouvido
+2026-01-25 15:45:35 - INFO - E-mail enviado | para=['geraldo.filho92@hotmail.com', 'geraldo.filho92@gmail.com'] | assunto='🔥 Alerta de preço: mercadolivre: galaxy-buds3-fone-de-ouvido'
+2026-01-25 15:45:35 - INFO - mercadolivre: galaxy-buds3-fone-de-ouvido | email enviado | PRECO BAIXO CORRE!
+2026-01-25 20:30:01 - INFO - mercadolivre: galaxy-buds3-fone-de-ouvido | www.mercadolivre.com.br/samsung-galaxy-buds3-fone-de-ouvido-sem-fio-galaxy-ai-cinza/p/MLB38059088 | selector=.andes-money-amount__fraction | value=745 | tempo de busca=0.82s
+2026-01-25 20:30:01 - INFO - preco_atual_dec <= target_dec | mercadolivre: galaxy-buds3-fone-de-ouvido
+2026-01-25 20:30:33 - INFO - E-mail enviado | para=['geraldo.filho92@hotmail.com', 'geraldo.filho92@gmail.com'] | assunto='🔥 Alerta de preço: mercadolivre: galaxy-buds3-fone-de-ouvido'
+2026-01-25 20:30:33 - INFO - mercadolivre: galaxy-buds3-fone-de-ouvido | email enviado | PRECO BAIXO CORRE!

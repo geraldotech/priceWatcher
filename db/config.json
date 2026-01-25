@@ -71,12 +71,27 @@
             "description": "mercadolivre: S23 ULTRA",
             "url": "https://www.mercadolivre.com.br/samsung-galaxy-s23-ultra-5g-dual-sim-256-gb-preto-12-gb-ram/p/MLB24594025",
             "times": [
-                "15:21"
+                "15:39"
             ],
-            "sendNow": true,
-            "status": false,
+            "status": true,
             "id": "df2562323bd553",
-            "lastRun": "2026-01-25T12:04:00"
+            "lastValue": "5.038",
+            "targetPrice": 5100.0,
+            "alertSent": false,
+            "lastRun": "2026-01-25T15:39:34"
+        },
+        {
+            "description": "mercadolivre: galaxy-buds3-fone-de-ouvido",
+            "url": "https://www.mercadolivre.com.br/samsung-galaxy-buds3-fone-de-ouvido-sem-fio-galaxy-ai-cinza/p/MLB38059088#",
+            "times": [
+                "20:30"
+            ],
+            "status": true,
+            "id": "df2562323bd553",
+            "targetPrice": 800.0,
+            "lastValue": "745",
+            "alertSent": false,
+            "lastRun": "2026-01-25T20:30:33"
         }
     ]
 }

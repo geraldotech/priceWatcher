@@ -590,7 +590,7 @@ def executar_tarefa_se_ativa(task):
                 # 2) alerta por targetPrice (anti-spam com alertSent)
                 if preco_atual_dec is not None and target_dec is not None:
                     if preco_atual_dec <= target_dec:
-                        success_logger.info(f"preco_atual_dec <= target_dec | {desc}")
+                        success_logger.info(f"{desc} | PRECO BAIXO CORRE! preco_atual_dec <= target_dec")
                         if task.get("alertSent", True):
                             should_send = True
                             reason = "PRECO BAIXO CORRE!"
@@ -608,7 +608,7 @@ def executar_tarefa_se_ativa(task):
                     corpo_html=html,
                     corpo_texto=texto
                 )
-                success_logger.info(f"{desc} | email enviado | {reason}")
+                success_logger.info(f"{desc} | {reason} | email enviado")
 
         # marca lastRun + salva
         try:
