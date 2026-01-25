@@ -4,15 +4,15 @@
             "description": "zonasul: cafe 3 coracoes",
             "url": "https://www.zonasul.com.br/capsulas-de-cafe-espresso-atento-3-coracoes-com-10-unidades-938521/p",
             "times": [
-                "16:55",
-                "19:36"
+                "08:49",
+                "22:50"
             ],
             "status": true,
             "id": "7bd563",
             "targetPrice": 15.98,
             "lastValue": "R$ 15,98",
             "alertSent": false,
-            "lastRun": "2026-01-24T19:36:58"
+            "lastRun": "2026-01-25T08:49:00"
         },
         {
             "description": "zonasul: azeite-extra-virgem",
@@ -31,25 +31,41 @@
             "description": "amazon: Samsung Galaxy S24U",
             "url": "https://www.amazon.com.br/Smartphone-Samsung-Galaxy-Selfie-1-120Hz/dp/B0CQD9VK7X?th=1",
             "times": [
-                "18:55"
+                "11:31"
             ],
             "status": true,
             "id": "7bhh53",
-            "sendNow": false,
-            "lastValue": "6.020 ,",
-            "lastRun": "2026-01-24T18:55:30"
+            "lastValue": "R$ 6.023,80",
+            "targetPrice": 6100.0,
+            "lastRun": "2026-01-25T11:31:34",
+            "alertSent": false
         },
         {
             "description": "amazon: Apple-iPhone-Pro-Max-256",
             "url": "https://www.amazon.com.br/Apple-iPhone-Pro-Max-256/dp/B0FQJ2KJ9X?th=1",
             "times": [
-                "18:58"
+                "10:59",
+                "11:00",
+                "11:41"
+            ],
+            "status": true,
+            "id": "7b336553",
+            "lastValue": "R$ 12.498,84",
+            "targetPrice": 11000.0,
+            "sendNow": true,
+            "lastRun": "2026-01-25T11:41:34"
+        },
+        {
+            "description": "amazon: MX Anywhere 3",
+            "url": "https://www.amazon.com.br/Logitech-Confort%C3%A1vel-Superf%C3%ADcie-Bluetooth-Recarreg%C3%A1vel/dp/B08NLQ9CQK?th=1",
+            "times": [
+                "11:50"
             ],
             "sendNow": true,
             "status": true,
-            "id": "7b336553",
-            "lastValue": "12.498 ,",
-            "lastRun": "2026-01-24T18:58:29"
+            "id": "df256bd553",
+            "lastValue": "R$ 500,00",
+            "lastRun": "2026-01-25T11:50:35"
         }
     ]
 }

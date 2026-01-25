@@ -141,10 +141,69 @@ def parse_target(value) -> Decimal | None:
 
 
 def fmt_brl_decimal(d: Decimal | None) -> str:
-    """Formata Decimal em BRL 'R$ 15,98'. Se None, retorna '—'."""
+    """Formata Decimal em BR: R$ 12.000,00. Se None, retorna '—'."""
     if d is None:
         return "—"
-    return "R$ " + f"{d:.2f}".replace(".", ",")
+    s = f"{d:,.2f}"  # ex: 12,000.00
+    s = s.replace(",", "X").replace(".", ",").replace("X", ".")  # 12.000,00
+    return "R$ " + s
+
+
+
+def fetch_amazon_price(url: str, timeout: int = 15) -> str | None:
+    headers = {
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120 Safari/537.36",
+        "Accept-Language": "pt-BR,pt;q=0.9,en;q=0.8",
+        "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+    }
+
+    r = requests.get(url, headers=headers, timeout=timeout)
+    r.raise_for_status()
+
+    html = r.content.decode("utf-8-sig", errors="replace")
+    soup = BeautifulSoup(html, "html.parser")
+
+    # 1) ✅ mais confiável: priceToPay (reinvent)
+    price_to_pay = soup.select_one(
+        "span.a-price.reinventPricePriceToPayMargin.priceToPay span.a-offscreen"
+    )
+    if price_to_pay:
+        txt = price_to_pay.get_text(" ", strip=True)
+        txt = normalizar_preco_br(txt)
+        if txt:
+            return txt
+
+    # 2) ✅ fallback: tenta outros comuns (opcional, mas ajuda)
+    for sel in [
+        "#priceblock_ourprice",
+        "#priceblock_dealprice",
+        "#priceblock_saleprice",
+        "span.a-price span.a-offscreen",
+    ]:
+        el = soup.select_one(sel)
+        if el:
+            txt = normalizar_preco_br(el.get_text(" ", strip=True))
+            if txt:
+                return txt
+
+    # 3) fallback antigo (seu método atual)
+    whole = soup.select_one(".a-price-whole")
+    frac = soup.select_one(".a-price-fraction")
+    sym = soup.select_one(".a-price-symbol")
+
+    if not whole:
+        return None
+
+    whole_txt = re.sub(r"[^\d\.]", "", whole.get_text(" ", strip=True))
+    frac_txt = re.sub(r"[^\d]", "", frac.get_text(" ", strip=True) if frac else "00") or "00"
+    symbol = sym.get_text(strip=True) if sym else "R$"
+
+    debug_path = Path("logs") / "debug_amazon.html"
+    debug_path.write_text(html, encoding="utf-8", errors="ignore")
+    info_logger.info(f"Amazon HTML salvo em {debug_path} | final_url={r.url}")
+
+
+    return f"{symbol} {whole_txt},{frac_txt}"
 
 
 
@@ -361,10 +420,21 @@ def normalizar_texto(txt: str) -> str:
 
 
 def buscar_preco_por_site(url: str) -> dict:
-
     dominio = extrair_dominio(url)
-    regra = sites_rules.get(dominio)
 
+    # tratamento para Amazon
+    if "amazon." in dominio:
+        try:
+            text = fetch_amazon_price(url)
+            if not text:
+                return {"ok": False, "dominio": dominio, "selector": "amazon-special", "value": None,
+                        "error": "Preço Amazon não encontrado (.a-price-whole)"}
+            return {"ok": True, "dominio": dominio, "selector": "amazon-special", "value": normalizar_preco_br(text), "error": None}
+        except Exception as e:
+            return {"ok": False, "dominio": dominio, "selector": "amazon-special", "value": None, "error": str(e)}
+
+    # resto dos sites
+    regra = sites_rules.get(dominio)
     if not regra or "price" not in regra or "selector" not in regra["price"]:
         return {"ok": False, "dominio": dominio, "selector": None, "value": None,
                 "error": f"Sem regra de selector em sites.json para {dominio}"}
@@ -376,11 +446,10 @@ def buscar_preco_por_site(url: str) -> dict:
         if text is None:
             return {"ok": False, "dominio": dominio, "selector": selector, "value": None,
                     "error": f"Selector não encontrado: {selector}"}
-
         return {"ok": True, "dominio": dominio, "selector": selector, "value": text, "error": None}
-
     except Exception as e:
         return {"ok": False, "dominio": dominio, "selector": selector, "value": None, "error": str(e)}
+
 
 
 def _worker_loop():
@@ -482,75 +551,68 @@ def executar_tarefa_se_ativa(task):
             )
 
             # parse correto
-            preco_atual = parse_price_text(valor)               # HTML (BR)
-            target_decimal = parse_target(task.get("targetPrice"))  # JSON (num)
+            preco_atual_dec = parse_price_text(valor)                 # Decimal ou None
+            target_dec = parse_target(task.get("targetPrice"))        # Decimal ou None
 
-            # corpo sempre seguro (não quebra com None)
+            # formata bonito no email
+            preco_atual_fmt = fmt_brl_decimal(preco_atual_dec) if preco_atual_dec is not None else valor
+            preco_alvo_fmt  = fmt_brl_decimal(target_dec)
+
             html = montar_email_html(
-                    titulo="🔥 Alerta de preço",
-                    produto=desc,
-                    url=task.get("url"),
-                    preco_atual=valor,
-                    preco_alvo=fmt_brl_decimal(target_decimal),
-                    site=extrair_dominio(task.get("url")),
-                )
+                titulo="🔥 Alerta de preço",
+                produto=desc,
+                url=task.get("url"),
+                preco_atual=preco_atual_fmt,
+                preco_alvo=preco_alvo_fmt,
+                site=extrair_dominio(task.get("url")),
+            )
 
             texto = (
                 f"{desc}\n"
                 f"{task.get('url')}\n\n"
-                f"Preço atual: {valor}\n"
-                f"Preço alvo: {fmt_brl_decimal(target_decimal)}\n"
+                f"Preço atual: {preco_atual_fmt}\n"
+                f"Preço alvo: {preco_alvo_fmt}\n"
                 f"Data/Hora: {datetime.now().strftime('%d/%m/%Y %H:%M:%S')}\n"
             )
 
-            enviar_email(
-                assunto=f"🔥 Alerta de preço: {desc}",
-                corpo_html=html,
-                corpo_texto=texto
-            )
-            # ---------- SEND NOW (manual) ----------
-            # ✅ default False, senão vira spam
-            # so envia email se só envia se explicitamente true  "sendNow": true,
-            if task.get("sendNow", False):
-                enviar_email(
-                        assunto=f"🔥 Alerta de preço: {desc}",
-                        corpo_html=html,
-                        corpo_texto=texto
-                    )
-               #se quiser que o sendnow seja desatibilitado, envia email apenas 1x
-               # task["sendNow"] = False  # auto-resetSendNow ? 
-                success_logger.info(f"SENDNOW | {desc} | email enviado")
-            else:
-                # ---------- ALERTA AUTOMÁTICO (targetPrice) ----------
-                # ---------- se sendNow for false ou nao existir ----------
-                if preco_atual is not None and target_decimal is not None:
-                    if preco_atual <= target_decimal:
-                        # ✅ alertSent=True => pode enviar (alerta armado)
-                        if task.get("alertSent", True):
-                            enviar_email(
-                                assunto=f"🔥 Alerta de preço: {desc}",
-                                corpo_html=html,
-                                corpo_texto=texto
-                            )
-                            task["alertSent"] = False  # desarma após enviar
-                            success_logger.info(f"ALERTA | {desc} | atual={preco_atual} <= target={target_decimal}")
-                        else:
-                            success_logger.info(f"Alerta já disparado | {desc} | atual={preco_atual} | target={target_decimal}")
-                    else:
-                        # preço acima -> rearma
-                        task["alertSent"] = True
-                        success_logger.info(f"Preço ok | alerta rearmado | {desc} | atual={preco_atual} > target={target_decimal}")
-                else:
-                    success_logger.info(f"Preço capturado sem target/parse | {desc} | valor={valor} | target={task.get('targetPrice')}")
+            # -------- decide 1x --------
+            should_send = False    
+            reason = ''        
 
-        else:
-            err = resp.get("error", "erro desconhecido")
-            print(f"⚠️ {desc} | FAIL | {elapsed:.2f}s | {err}")
-            info_logger.warning(f"FAIL extract: {short_url} | {elapsed:.2f}s | {err}")
-            error_logger.error(f"{desc} | {short_url} | selector={resp.get('selector')} | error={err}")
+            # 1) sendNow tem prioridade
+            if task.get("sendNow", False):
+                should_send = True                
+                reason = "envio imediato"
+                # auto-reset pra não virar spam mudar o valor do sendNow (entao o email so é disparado uma vez)
+                #task["sendNow"] = False
+
+            else:
+                # 2) alerta por targetPrice (anti-spam com alertSent)
+                if preco_atual_dec is not None and target_dec is not None:
+                    if preco_atual_dec <= target_dec:
+                        success_logger.info(f"preco_atual_dec <= target_dec | {desc}")
+                        if task.get("alertSent", True):
+                            should_send = True
+                            reason = "PRECO BAIXO CORRE!"
+                            task["alertSent"] = False # reseta para nao enviar mais emails (antispam)
+                        else:
+                            success_logger.info(f"Alerta já disparado | nenhum email será enviado {desc}")
+                    else:
+                        task["alertSent"] = True  # rearma quando voltar a ficar acima
+                        success_logger.info(f"{desc} - preco {preco_atual_dec}  maior do que o target {target_dec}")
+
+            # envia UMA vez
+            if should_send:
+                enviar_email(
+                    assunto=f"🔥 Alerta de preço: {desc}",
+                    corpo_html=html,
+                    corpo_texto=texto
+                )
+                success_logger.info(f"{reason} | {desc} | email enviado")
 
         # marca lastRun + salva
         try:
+            #success_logger.info(f"marcando lastrun | {desc}")
             task["lastRun"] = datetime.now().isoformat(timespec="seconds")
             salvar_config(config)
         except Exception as e:
@@ -615,7 +677,7 @@ def mostrar_agendamentos():
 
         times_show = ", ".join(times) if isinstance(times, list) and times else "—"
 
-        linha = f"{times_show:<22} | {task.get('description','')[:15]:<15} | {status2}"
+        linha = f"{times_show:<22} | {task.get('description','')[:25]:<15} | {status2}"
         print(linha)
         info_logger.info(linha)
 

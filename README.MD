@@ -66,9 +66,10 @@ Exemplo:
 
 | Campo | Descrição |
 |------|-----------|
-| `targetPrice` | Preço alvo para alerta automático |
-| `alertSent` | Controla se o alerta automático pode ser enviado |
-| `sendNow` | Força envio imediato (1x) |
+| `targetPrice` | Preço alvo para alerta automático deve ser tipo número exemplo: `"targetPrice": 11000.0`
+| `alertSent` | Controla se o alerta automático, ao chegar no preço setado o email é enviado e será `alertSent: false` evitando enviar futuros emails, também temos `task["alertSent"] = True` que rearma quando o preço voltar a subir e posteriormente vai alertar quando o preço  baixar.
+
+| `sendNow` | Força envio o envio do email mesmo que não atenda as condições do alerta, (codigo comentado pra enviar sempre if task.get("sendNow", False):) descomentar para o sendNow funcionar apenas 1x
 | `lastValue` | Último valor capturado |
 | `lastRun` | Última execução |
 

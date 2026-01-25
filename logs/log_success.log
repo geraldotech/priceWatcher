@@ -1,11 +1,52 @@
-2026-01-24 19:22:01 - INFO - zonasul: cafe 3 coracoes | www.zonasul.com.br/capsulas-de-cafe-espresso-atento-3-coracoes-com-10-unidades-938521/p | selector=.vtex-difference__por | value=R$ 15,98 | tempo de busca=0.46s
-2026-01-24 19:22:15 - INFO - ALERTA | zonasul: cafe 3 coracoes | atual=15.98 <= target=15.98
-2026-01-24 19:24:00 - INFO - zonasul: cafe 3 coracoes | www.zonasul.com.br/capsulas-de-cafe-espresso-atento-3-coracoes-com-10-unidades-938521/p | selector=.vtex-difference__por | value=R$ 15,98 | tempo de busca=0.34s
-2026-01-24 19:24:13 - INFO - ALERTA | zonasul: cafe 3 coracoes | atual=15.98 <= target=15.98
-2026-01-24 19:28:01 - INFO - zonasul: cafe 3 coracoes | www.zonasul.com.br/capsulas-de-cafe-espresso-atento-3-coracoes-com-10-unidades-938521/p | selector=.vtex-difference__por | value=R$ 15,98 | tempo de busca=0.27s
-2026-01-24 19:28:29 - INFO - E-mail enviado | para=['geraldo.filho92@hotmail.com', 'geraldo.filho92@gmail.com'] | assunto='🔥 Alerta de preço: zonasul: cafe 3 coracoes'
-2026-01-24 19:28:29 - INFO - ALERTA | zonasul: cafe 3 coracoes | atual=15.98 <= target=15.98
-2026-01-24 19:36:01 - INFO - zonasul: cafe 3 coracoes | www.zonasul.com.br/capsulas-de-cafe-espresso-atento-3-coracoes-com-10-unidades-938521/p | selector=.vtex-difference__por | value=R$ 15,98 | tempo de busca=0.33s
-2026-01-24 19:36:31 - INFO - E-mail enviado | para=['geraldo.filho92@hotmail.com', 'geraldo.filho92@gmail.com'] | assunto='🔥 Alerta de preço: zonasul: cafe 3 coracoes'
-2026-01-24 19:36:58 - INFO - E-mail enviado | para=['geraldo.filho92@hotmail.com', 'geraldo.filho92@gmail.com'] | assunto='🔥 Alerta de preço: zonasul: cafe 3 coracoes'
-2026-01-24 19:36:58 - INFO - ALERTA | zonasul: cafe 3 coracoes | atual=15.98 <= target=15.98
+2026-01-25 09:46:00 - INFO - amazon: Apple-iPhone-Pro-Max-256 | www.amazon.com.br/Apple-iPhone-Pro-Max-256/dp/B0FQJ2KJ9X | selector=amazon-special | value=R$ 12.498,84 | tempo de busca=0.67s
+2026-01-25 09:47:01 - INFO - amazon: Apple-iPhone-Pro-Max-256 | www.amazon.com.br/Apple-iPhone-Pro-Max-256/dp/B0FQJ2KJ9X | selector=amazon-special | value=R$ 12.498,84 | tempo de busca=0.82s
+2026-01-25 09:50:01 - INFO - amazon: Apple-iPhone-Pro-Max-256 | www.amazon.com.br/Apple-iPhone-Pro-Max-256/dp/B0FQJ2KJ9X | selector=amazon-special | value=R$ 12.498,84 | tempo de busca=0.46s
+2026-01-25 09:52:02 - INFO - amazon: Apple-iPhone-Pro-Max-256 | www.amazon.com.br/Apple-iPhone-Pro-Max-256/dp/B0FQJ2KJ9X | selector=amazon-special | value=R$ 11.248,99 | tempo de busca=1.65s
+2026-01-25 10:01:02 - INFO - amazon: Apple-iPhone-Pro-Max-256 | www.amazon.com.br/Apple-iPhone-Pro-Max-256/dp/B0FQJ2KJ9X | selector=amazon-special | value=R$ 11.248,99 | tempo de busca=1.69s
+2026-01-25 10:01:02 - INFO - amazon: Apple-iPhone-Pro-Max-256 - preco 11248.99  maior do que o target 11000.0
+2026-01-25 10:02:01 - INFO - amazon: Apple-iPhone-Pro-Max-256 | www.amazon.com.br/Apple-iPhone-Pro-Max-256/dp/B0FQJ2KJ9X | selector=amazon-special | value=R$ 11.248,99 | tempo de busca=1.47s
+2026-01-25 10:02:01 - INFO - amazon: Apple-iPhone-Pro-Max-256 - preco 11248.99  maior do que o target 11000.0
+2026-01-25 10:05:02 - INFO - amazon: Apple-iPhone-Pro-Max-256 | www.amazon.com.br/Apple-iPhone-Pro-Max-256/dp/B0FQJ2KJ9X | selector=amazon-special | value=R$ 11.248,99 | tempo de busca=1.51s
+2026-01-25 10:05:32 - INFO - E-mail enviado | para=['geraldo.filho92@hotmail.com', 'geraldo.filho92@gmail.com'] | assunto='🔥 Alerta de preço: amazon: Apple-iPhone-Pro-Max-256'
+2026-01-25 10:05:32 - INFO - envio imediato | amazon: Apple-iPhone-Pro-Max-256 | email enviado
+2026-01-25 10:06:01 - INFO - amazon: Apple-iPhone-Pro-Max-256 | www.amazon.com.br/Apple-iPhone-Pro-Max-256/dp/B0FQJ2KJ9X | selector=amazon-special | value=R$ 12.498,84 | tempo de busca=0.58s
+2026-01-25 10:06:01 - INFO - amazon: Apple-iPhone-Pro-Max-256 - preco 12498.84  maior do que o target 11000.0
+2026-01-25 10:46:01 - INFO - amazon: Apple-iPhone-Pro-Max-256 | www.amazon.com.br/Apple-iPhone-Pro-Max-256/dp/B0FQJ2KJ9X | selector=amazon-special | value=R$ 12.498,84 | tempo de busca=0.59s
+2026-01-25 10:46:01 - INFO - amazon: Apple-iPhone-Pro-Max-256 - preco 12498.84  maior do que o target 11000.0
+2026-01-25 10:47:02 - INFO - amazon: Apple-iPhone-Pro-Max-256 | www.amazon.com.br/Apple-iPhone-Pro-Max-256/dp/B0FQJ2KJ9X | selector=amazon-special | value=R$ 11.248,99 | tempo de busca=1.65s
+2026-01-25 10:47:02 - INFO - amazon: Apple-iPhone-Pro-Max-256 - preco 11248.99  maior do que o target 11000.0
+2026-01-25 10:50:01 - INFO - amazon: Apple-iPhone-Pro-Max-256 | www.amazon.com.br/Apple-iPhone-Pro-Max-256/dp/B0FQJ2KJ9X | selector=amazon-special | value=R$ 12.498,84 | tempo de busca=0.62s
+2026-01-25 10:50:35 - INFO - E-mail enviado | para=['geraldo.filho92@hotmail.com', 'geraldo.filho92@gmail.com'] | assunto='🔥 Alerta de preço: amazon: Apple-iPhone-Pro-Max-256'
+2026-01-25 10:50:35 - INFO - envio imediato | amazon: Apple-iPhone-Pro-Max-256 | email enviado
+2026-01-25 10:51:02 - INFO - amazon: Apple-iPhone-Pro-Max-256 | www.amazon.com.br/Apple-iPhone-Pro-Max-256/dp/B0FQJ2KJ9X | selector=amazon-special | value=R$ 11.248,99 | tempo de busca=1.74s
+2026-01-25 10:51:34 - INFO - E-mail enviado | para=['geraldo.filho92@hotmail.com', 'geraldo.filho92@gmail.com'] | assunto='🔥 Alerta de preço: amazon: Apple-iPhone-Pro-Max-256'
+2026-01-25 10:51:34 - INFO - envio imediato | amazon: Apple-iPhone-Pro-Max-256 | email enviado
+2026-01-25 10:59:01 - INFO - amazon: Apple-iPhone-Pro-Max-256 | www.amazon.com.br/Apple-iPhone-Pro-Max-256/dp/B0FQJ2KJ9X | selector=amazon-special | value=R$ 12.498,84 | tempo de busca=0.83s
+2026-01-25 10:59:34 - INFO - E-mail enviado | para=['geraldo.filho92@hotmail.com', 'geraldo.filho92@gmail.com'] | assunto='🔥 Alerta de preço: amazon: Apple-iPhone-Pro-Max-256'
+2026-01-25 10:59:34 - INFO - envio imediato | amazon: Apple-iPhone-Pro-Max-256 | email enviado
+2026-01-25 11:00:00 - INFO - amazon: Apple-iPhone-Pro-Max-256 | www.amazon.com.br/Apple-iPhone-Pro-Max-256/dp/B0FQJ2KJ9X | selector=amazon-special | value=R$ 12.498,84 | tempo de busca=0.61s
+2026-01-25 11:00:32 - INFO - E-mail enviado | para=['geraldo.filho92@hotmail.com', 'geraldo.filho92@gmail.com'] | assunto='🔥 Alerta de preço: amazon: Apple-iPhone-Pro-Max-256'
+2026-01-25 11:00:32 - INFO - envio imediato | amazon: Apple-iPhone-Pro-Max-256 | email enviado
+2026-01-25 11:05:02 - INFO - amazon: Samsung Galaxy S24U | www.amazon.com.br/Smartphone-Samsung-Galaxy-Selfie-1-120Hz/dp/B0CQD9VK7X | selector=amazon-special | value=R$ 6.023,80 | tempo de busca=1.83s
+2026-01-25 11:05:04 - INFO - amazon: Apple-iPhone-Pro-Max-256 | www.amazon.com.br/Apple-iPhone-Pro-Max-256/dp/B0FQJ2KJ9X | selector=amazon-special | value=R$ 12.498,84 | tempo de busca=0.53s
+2026-01-25 11:05:37 - INFO - E-mail enviado | para=['geraldo.filho92@hotmail.com', 'geraldo.filho92@gmail.com'] | assunto='🔥 Alerta de preço: amazon: Apple-iPhone-Pro-Max-256'
+2026-01-25 11:05:37 - INFO - envio imediato | amazon: Apple-iPhone-Pro-Max-256 | email enviado
+2026-01-25 11:09:01 - INFO - amazon: Samsung Galaxy S24U | www.amazon.com.br/Smartphone-Samsung-Galaxy-Selfie-1-120Hz/dp/B0CQD9VK7X | selector=amazon-special | value=R$ 6.010,11 | tempo de busca=0.88s
+2026-01-25 11:09:01 - INFO - preco_atual_dec <= target_dec | amazon: Samsung Galaxy S24U
+2026-01-25 11:09:34 - INFO - E-mail enviado | para=['geraldo.filho92@hotmail.com', 'geraldo.filho92@gmail.com'] | assunto='🔥 Alerta de preço: amazon: Samsung Galaxy S24U'
+2026-01-25 11:09:34 - INFO - PRECO BAIXO CORRE! | amazon: Samsung Galaxy S24U | email enviado
+2026-01-25 11:20:01 - INFO - amazon: Samsung Galaxy S24U | www.amazon.com.br/Smartphone-Samsung-Galaxy-Selfie-1-120Hz/dp/B0CQD9VK7X | selector=amazon-special | value=R$ 6.010,11 | tempo de busca=0.87s
+2026-01-25 11:20:01 - INFO - preco_atual_dec <= target_dec | amazon: Samsung Galaxy S24U
+2026-01-25 11:20:34 - INFO - E-mail enviado | para=['geraldo.filho92@hotmail.com', 'geraldo.filho92@gmail.com'] | assunto='🔥 Alerta de preço: amazon: Samsung Galaxy S24U'
+2026-01-25 11:20:34 - INFO - PRECO BAIXO CORRE! | amazon: Samsung Galaxy S24U | email enviado
+2026-01-25 11:26:01 - INFO - amazon: Samsung Galaxy S24U | www.amazon.com.br/Smartphone-Samsung-Galaxy-Selfie-1-120Hz/dp/B0CQD9VK7X | selector=amazon-special | value=R$ 6.023,80 | tempo de busca=1.79s
+2026-01-25 11:26:01 - INFO - preco_atual_dec <= target_dec | amazon: Samsung Galaxy S24U
+2026-01-25 11:26:32 - INFO - E-mail enviado | para=['geraldo.filho92@hotmail.com', 'geraldo.filho92@gmail.com'] | assunto='🔥 Alerta de preço: amazon: Samsung Galaxy S24U'
+2026-01-25 11:26:32 - INFO - PRECO BAIXO CORRE! | amazon: Samsung Galaxy S24U | email enviado
+2026-01-25 11:31:02 - INFO - amazon: Samsung Galaxy S24U | www.amazon.com.br/Smartphone-Samsung-Galaxy-Selfie-1-120Hz/dp/B0CQD9VK7X | selector=amazon-special | value=R$ 6.023,80 | tempo de busca=2.17s
+2026-01-25 11:31:02 - INFO - preco_atual_dec <= target_dec | amazon: Samsung Galaxy S24U
+2026-01-25 11:31:34 - INFO - E-mail enviado | para=['geraldo.filho92@hotmail.com', 'geraldo.filho92@gmail.com'] | assunto='🔥 Alerta de preço: amazon: Samsung Galaxy S24U'
+2026-01-25 11:31:34 - INFO - PRECO BAIXO CORRE! | amazon: Samsung Galaxy S24U | email enviado
+2026-01-25 11:41:01 - INFO - amazon: Apple-iPhone-Pro-Max-256 | www.amazon.com.br/Apple-iPhone-Pro-Max-256/dp/B0FQJ2KJ9X | selector=amazon-special | value=R$ 12.498,84 | tempo de busca=0.68s
+2026-01-25 11:41:34 - INFO - E-mail enviado | para=['geraldo.filho92@hotmail.com', 'geraldo.filho92@gmail.com'] | assunto='🔥 Alerta de preço: amazon: Apple-iPhone-Pro-Max-256'
+2026-01-25 11:41:34 - INFO - envio imediato | amazon: Apple-iPhone-Pro-Max-256 | email enviado
