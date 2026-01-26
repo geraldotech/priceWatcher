@@ -4,7 +4,7 @@ Serviço em Python para monitorar preços em páginas web, registrar logs e envi
 
 ---
 
-![alt text](image.png)
+![alt text](image-1.png)
 
 ## 🚀 Funcionalidades
 
