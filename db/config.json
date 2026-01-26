@@ -46,14 +46,14 @@
             "times": [
                 "10:59",
                 "11:00",
-                "15:29"
+                "22:06"
             ],
             "status": true,
             "id": "7b336553",
-            "lastValue": "R$ 11.248,99",
-            "targetPrice": 11000.0,
-            "sendNow": true,
-            "lastRun": "2026-01-25T15:29:34"
+            "lastValue": "R$ 12.498,84",
+            "targetPrice": 12500.0,
+            "alertSent": false,
+            "lastRun": "2026-01-25T22:06:33"
         },
         {
             "description": "amazon: MX Anywhere 3",

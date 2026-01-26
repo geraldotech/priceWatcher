@@ -75,3 +75,15 @@
 2026-01-25 20:30:01 - INFO - preco_atual_dec <= target_dec | mercadolivre: galaxy-buds3-fone-de-ouvido
 2026-01-25 20:30:33 - INFO - E-mail enviado | para=['geraldo.filho92@hotmail.com', 'geraldo.filho92@gmail.com'] | assunto='🔥 Alerta de preço: mercadolivre: galaxy-buds3-fone-de-ouvido'
 2026-01-25 20:30:33 - INFO - mercadolivre: galaxy-buds3-fone-de-ouvido | email enviado | PRECO BAIXO CORRE!
+2026-01-25 21:59:02 - INFO - amazon: Apple-iPhone 17 -Pro-Max-256 | www.amazon.com.br/Apple-iPhone-Pro-Max-256/dp/B0FQJ2KJ9X | selector=amazon-special | value=R$ 11.248,99 | tempo de busca=1.85s
+2026-01-25 21:59:02 - INFO - amazon: Apple-iPhone 17 -Pro-Max-256 | PRECO BAIXO CORRE! preco_atual_dec <= target_dec
+2026-01-25 21:59:35 - INFO - E-mail enviado | para=['geraldo.filho92@hotmail.com', 'geraldo.filho92@gmail.com'] | assunto='🔥 Alerta de preço: amazon: Apple-iPhone 17 -Pro-Max-256'
+2026-01-25 21:59:35 - INFO - amazon: Apple-iPhone 17 -Pro-Max-256 | PRECO BAIXO CORRE! | email enviado
+2026-01-25 22:01:01 - INFO - amazon: Apple-iPhone 17 -Pro-Max-256 | www.amazon.com.br/Apple-iPhone-Pro-Max-256/dp/B0FQJ2KJ9X | selector=amazon-special | value=R$ 12.498,84 | tempo de busca=0.83s
+2026-01-25 22:01:01 - INFO - amazon: Apple-iPhone 17 -Pro-Max-256 - preco 12498.84  maior do que o target 11250.0
+2026-01-25 22:03:01 - INFO - amazon: Apple-iPhone 17 -Pro-Max-256 | www.amazon.com.br/Apple-iPhone-Pro-Max-256/dp/B0FQJ2KJ9X | selector=amazon-special | value=R$ 12.498,84 | tempo de busca=0.71s
+2026-01-25 22:03:01 - INFO - amazon: Apple-iPhone 17 -Pro-Max-256 - preco 12498.84  maior do que o target 11250.0
+2026-01-25 22:06:02 - INFO - amazon: Apple-iPhone 17 -Pro-Max-256 | www.amazon.com.br/Apple-iPhone-Pro-Max-256/dp/B0FQJ2KJ9X | selector=amazon-special | value=R$ 12.498,84 | tempo de busca=1.95s
+2026-01-25 22:06:02 - INFO - amazon: Apple-iPhone 17 -Pro-Max-256 | PRECO BAIXO CORRE! preco_atual_dec <= target_dec
+2026-01-25 22:06:33 - INFO - E-mail enviado | para=['geraldo.filho92@hotmail.com', 'geraldo.filho92@gmail.com'] | assunto='🔥 Alerta de preço: amazon: Apple-iPhone 17 -Pro-Max-256'
+2026-01-25 22:06:33 - INFO - amazon: Apple-iPhone 17 -Pro-Max-256 | PRECO BAIXO CORRE! | email enviado
