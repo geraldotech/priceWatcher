@@ -131,9 +131,9 @@ Preço capturado
 
 ```ini
 [email]
-email=sga@appsga.com.br
+email=provider@apps.com.br
 senha=123456
-remetente=sga@appsga.com.br
+remetente=provider@apps.com.br
 smtp=smtp.seudominio.com
 portaSmtp=465
 autenticacao=1
